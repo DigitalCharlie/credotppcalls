@@ -30,6 +30,7 @@ $(function() {
 				}
 			});
 			$('#whipcount_id').text(rep.whipcount_id);
+			$('#phone_number').text(rep.phone);
 		 }
 		}).done(function( data ) {
 		 console.log( "Data Loaded: " + data );
