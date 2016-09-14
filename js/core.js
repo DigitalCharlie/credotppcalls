@@ -24,13 +24,14 @@ $(function() {
 			 }
 			});
 			 $('#rep_name').text(rep.first_name);
+			 $('#phone_number').text(rep.phone);
+
 			$.each(rep_table, function(index, value) {
 				if (value.bioguide_id === rep.bioguide_id) {
 					$.extend(rep,value);
 				}
 			});
 			$('#whipcount_id').text(rep.whipcount_id);
-			$('#phone_number').text(rep.phone);
 		 }
 		}).done(function( data ) {
 		 console.log( "Data Loaded: " + data );
