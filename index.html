@@ -16,7 +16,7 @@
     <meta property="og:description" content=""/>
     <meta property="twitter:title" content="" />
     <meta property="twitter:description" content="" />
-    <title>I Hate you, TPP.</title>
+    <title>Stop the TPP.</title>
     <link href="css/credohousecalls.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -29,39 +29,101 @@
 </head>
 <body>
 
-    <input name="lookup_zip" id="lookup_zip" type="text" class="form-control" placeholder="Enter your zip code">
-    <div class="button" id="lookup_submit">Go</div>
+    <div class="header">
 
-    <div id="rep_name"></div>
-    <div id="whipcount_id"></div>
-    <div id="phone_number"></div>
+        <div class="header-logo">
+
+            <a href="http://www.credoaction.com" target="_blank"><img src="images/credo-action-logo.png" style="height:40px;"></a>
+
+        </div>
+
+        <div class="header-buttons">
+
+            <a href="#take-action" class="header-text">TAKE ACTION</a>
+
+                <a href="#"><img src="images/facebook-icon.png" style="height:23px; padding: 3px 5px 0px 15px;"></a>
+
+                <a href="#"><img src="images/twitter-icon.png" style="height:23px; padding: 3px 5px 0px 5px;"></a>
+
+        </div>
+
+    </div>
+
+    <div class="top section v1" style="display:none;">
+
+        <h1>
+            Stop the TPP
+        </h1>
+
+        <h2>
+            Is your representative for or against the TPP? Help us find out! Enter your zip code and we’ll connect you to your representative.
+        </h2>
+
+    </div>
+
+    <div class="top section v2">
+
+        <h1 style="font-size:70px;">
+            The Fight Against the TPP is too Close.
+        </h1>
+
+        <div class="scoreboard-wrapper">
+
+            <div class="scoreboard-number">
+                <div class="number">188</div>
+                <div class="stance">Support the TPP</div>
+            </div>
+
+            <div class="scoreboard-number">
+                <div class="number">208</div>
+                <div class="stance">Oppose the TPP</div>
+            </div>
+
+            <div class="scoreboard-number">
+                <div class="number">39</div>
+                <div class="stance">Have not Decided</div>
+            </div>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="home-fields-wrapper">
+
+            <a  name="take-action"></a>
+
+            <form id="basic-search"> 
+
+                <input name="zip" id="zip-search" type="text" class="zip-input" placeholder="Enter your zip code">
+
+                <button type="submit" class="submit-button">Take Action</button>
+
+            </form>
+
+        </div>
+
+    </div>
 
 
-    <form role="form" method="POST" action="//act.credoaction.com/act/" id="ak-form" name="ak-form">
 
-            <div class="form-group"><input type="text" class="form-control" name="name" placeholder="name"></div>
-            <div class="form-group"><input type="email" class="form-control" name="email" placeholder="email"></div>
-            <div class="form-group"><input type="text" class="form-control" name="zip" placeholder="zip code"></div>
-            <textarea id="id_action_survey" name="action_survey" class="ak-has-overlay"></textarea>
+    <div class="blog section">
 
-            <button type="submit" class="btn btn-ak">Submit</button>
+        <h2>
+            Members of Congress Speak Out on the TPP.
+        </h2>
 
-            <input name="page" value="tpp-whipcount-2016" type="hidden" />
-            <input name="action_referrer" value="" type="hidden" />
-            <input name="country" value="United States" type="hidden" />
-            <input name="lists" value="1" type="hidden" />
-                            
-      </form>
+    </div>
 
-      <script type="text/javascript">
-        actionkit.forms.contextRoot = '//act.credoaction.com/context/';
-        actionkit.forms.initPage(); actionkit.forms.initForm('act');
-        actionkit.utils.appendHiddenInput('action_referrer', document.referrer);
-      </script>
+    <div class="keyreps section">
 
-      <script>
-        console.log(rep_table);
-      </script>
+        <h2 title>Who are the Swing Representatives?</h2>
+
+    </div>
+
+    <div class="footer">
+
+    </div>
+
 
 
 </body>

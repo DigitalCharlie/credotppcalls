@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="CREDO Mobile">
+    <meta property="og:title" content="description text"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="images/"/>
+    <meta property="og:site_name" content=""/>
+    <meta property="fb:admins" content="612663871"/>
+    <meta property="og:description" content=""/>
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <title>I Hate you, TPP.</title>
+    <link href="css/credohousecalls.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="//act.credoaction.com/resources/actionkit.js"></script>
+    <script type="text/javascript" src="/credotppcalls/js/repdata.js"></script>
+    <script type="text/javascript" src="/credotppcalls/js/core.js"></script>
+
+
+</head>
+<body>
+
+    <input name="lookup_zip" id="lookup_zip" type="text" class="form-control" placeholder="Enter your zip code">
+    <div class="button" id="lookup_submit">Go</div>
+
+    <div id="rep_name"></div>
+    <div id="whipcount_id"></div>
+    <div id="phone_number"></div>
+
+
+    <form role="form" method="POST" action="//act.credoaction.com/act/" id="ak-form" name="ak-form">
+
+            <div class="form-group"><input type="text" class="form-control" name="name" placeholder="name"></div>
+            <div class="form-group"><input type="email" class="form-control" name="email" placeholder="email"></div>
+            <div class="form-group"><input type="text" class="form-control" name="zip" placeholder="zip code"></div>
+            <textarea id="id_action_survey" name="action_survey" class="ak-has-overlay"></textarea>
+
+            <button type="submit" class="btn btn-ak">Submit</button>
+
+            <input name="page" value="tpp-whipcount-2016" type="hidden" />
+            <input name="action_referrer" value="" type="hidden" />
+            <input name="country" value="United States" type="hidden" />
+            <input name="lists" value="1" type="hidden" />
+                            
+      </form>
+
+      <script type="text/javascript">
+        actionkit.forms.contextRoot = '//act.credoaction.com/context/';
+        actionkit.forms.initPage(); actionkit.forms.initForm('act');
+        actionkit.utils.appendHiddenInput('action_referrer', document.referrer);
+      </script>
+
+      <script>
+        console.log(rep_table);
+      </script>
+
+
+</body>
+</html>
