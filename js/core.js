@@ -29,6 +29,8 @@
 						$("#zip-search").addClass("input-error")
 					} else {
 
+						$('#zip-search').blur()
+
 						$('.overlay').css('display', 'block');
 				        setTimeout(function() {
 				        	$('.overlay').css('opacity', 1);
