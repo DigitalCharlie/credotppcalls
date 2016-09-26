@@ -51,6 +51,14 @@
 							$('#phone-number').text(rep.phone);
 							$('#stance').text(rep.disposition);
 							console.log(rep);
+						} else {
+							$.each(repList, function(index, rep) {
+								var repElement=$('#multiple-reps-li').clone();
+								repElement.find('.multiple-reps-name').val(rep.first_name);
+								repElement.removeClass('hidden');
+								$('#multiple-reps-list').append(repElement);
+							});
+
 						}
 							 
 					}
@@ -72,7 +80,7 @@
 	});
 
 	$(function() {
-	    $("#theX").click(function() {
+	    $("#the-x").click(function() {
 	        $('.overlay').css('display', 'none');
 	        setTimeout(function() {
 	        $('.overlay').css('opacity', 0);

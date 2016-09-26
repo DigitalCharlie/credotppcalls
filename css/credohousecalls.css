@@ -271,6 +271,14 @@
 
     }
 
+    .the-x {
+        cursor:pointer;
+    }
+
+    .multiple-reps-name {
+        cursor:pointer;
+    }
+
 @media screen and (min-width: 800px) {
 
     /* Header */
