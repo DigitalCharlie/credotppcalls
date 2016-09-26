@@ -5,6 +5,8 @@
 	    	event.preventDefault();
 	    	$("#zip-error").addClass("hidden");
 			$("#zip-search").removeClass("input-error");
+			$('#overlay-content-multiple-reps').addClass('hidden');
+			$('#overlay-content-1-rep').addClass('hidden');
 			var lookup_zip = $("#zip-search").val().trim().substring(0, 5);
 	    	var lookup_data = {
 			 "zip": lookup_zip,
@@ -54,7 +56,7 @@
 							console.log(rep);
 						} else {
 							$.each(repList, function(index, rep) {
-								var repElement=$('#multiple-reps-li').clone();
+								var repElement=$('.multiple-reps-li').clone();
 								repElement.find('.multiple-reps-name').val(rep.first_name);
 								repElement.removeClass('hidden');
 								$('#multiple-reps-list').append(repElement);
