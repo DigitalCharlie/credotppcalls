@@ -22,8 +22,8 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="//act.credoaction.com/resources/actionkit.js"></script>
-    <script type="text/javascript" src="/credotppcalls/js/repdata.js"></script>
-    <script type="text/javascript" src="/credotppcalls/js/core.js"></script>
+    <script type="text/javascript" src="js/repdata.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
 
 </head>
 <body>
@@ -99,11 +99,20 @@
 
             </form>
 
+            <button id="test">Test</button>
+
         </div>
 
     </div>
 
-
+    <div id="overlay" class="overlay">
+        <div id="overlay-content" class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
 
     <div class="blog section">
 
@@ -742,7 +751,31 @@
 
     </div>
 
+    <script type="text/javascript">
+        $(function() {
+            $("#test").click(function() {
+                $('.overlay').css('display', 'block');
+                setTimeout(function() {
+                  $('.overlay').css('opacity', 1);
+                  }, 50);
+            });
+        });
+    </script>
 
+    <script type="text/javascript">
+        $(function() {
+            $("#overlay").click(function() {
+                $('.overlay').css('display', 'none');
+                setTimeout(function() {
+                  $('.overlay').css('opacity', 0);
+                  }, 50);
+            });
+
+            $('#overlay-content').click(function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
 
 </body>
 </html>
