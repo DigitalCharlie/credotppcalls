@@ -87,16 +87,24 @@ function populateRep(rep) {
 
 
 /* Controls Overlay */
-	$(function() {
-	    $("#test").click(function() {
-	        $('.overlay').css('display', 'block');
-	        setTimeout(function() {
-	          $('.overlay').css('opacity', 1);
-	          }, 50);
-	    });
-	});
 
 	$(function() {
+		$(".call-key-rep").on('click', function(event){
+			var bioguide_id=$(this).data('id');
+			var rep;
+			$.each(rep_table, function(index, value) {
+				if (value.bioguide_id === bioguide_id) {
+					rep=value;
+				}
+			});
+			$('.overlay').css('display', 'block');
+			setTimeout(function() {
+				$('.overlay').css('opacity', 1);
+			}, 50);
+			populateRep(rep);
+		})
+
+
 	    $("#the-x").click(function() {
 	        $('.overlay').css('display', 'none');
 	        setTimeout(function() {
