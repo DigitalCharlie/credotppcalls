@@ -5,7 +5,7 @@
 	    	event.preventDefault();
 	    	$("#zip-error").addClass("hidden");
 			$("#zip-search").removeClass("input-error");
-			var lookup_zip = $("zip-search").val().trim().substring(0, 5);
+			var lookup_zip = $("#zip-search").val().trim().substring(0, 5);
 	    	var lookup_data = {
 			 "zip": lookup_zip,
 			 "apikey": "593843c677374434b1d1403432d034ed",
