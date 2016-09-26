@@ -751,31 +751,5 @@
 
     </div>
 
-    <script type="text/javascript">
-        $(function() {
-            $("#test").click(function() {
-                $('.overlay').css('display', 'block');
-                setTimeout(function() {
-                  $('.overlay').css('opacity', 1);
-                  }, 50);
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(function() {
-            $("#overlay").click(function() {
-                $('.overlay').css('display', 'none');
-                setTimeout(function() {
-                  $('.overlay').css('opacity', 0);
-                  }, 50);
-            });
-
-            $('#overlay-content').click(function(e) {
-                e.stopPropagation();
-            });
-        });
-    </script>
-
 </body>
 </html>
