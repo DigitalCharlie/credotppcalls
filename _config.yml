@@ -1,0 +1,16 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Stop the TPP
+tagline:             'We need to stop the TPP.'
+description:         'The TPP is an affront to democracy.'
+url:                 something
+baseurl:             'something'
+paginate:            5
+
+# Custom vars
+version:             awesome
