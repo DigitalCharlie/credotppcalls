@@ -16,25 +16,31 @@
 			 dataType: 'jsonp',
 			 jsonp:'callback',
 			 success: function(data, textStatus, jqXHR) {
-			   console.log(data);
-			   console.log(textStatus);
-			   console.log(jqXHR);
-				var rep;
-				$.each(data.results, function(index, value) {
-				 if (value.chamber === 'house') {
-				   rep = value;
-				 }
-				});
-				 $('#rep_name').text(rep.first_name);
-				 $('#phone_number').text(rep.phone);
+				console.log(data);
+				console.log(textStatus);
+				console.log(jqXHR);
 
-				$.each(rep_table, function(index, value) {
-					if (value.bioguide_id === rep.bioguide_id) {
-						$.extend(rep,value);
+				if(data.results.length===0){
+					$("#zip-error").removeClass("hidden");
+				} else {
+
+					var rep;
+					$.each(data.results, function(index, value) {
+						 if (value.chamber === 'house') {
+						   rep = value;
+						 }
+						});
+						 $('#rep_name').text(rep.first_name);
+						 $('#phone_number').text(rep.phone);
+
+						$.each(rep_table, function(index, value) {
+							if (value.bioguide_id === rep.bioguide_id) {
+								$.extend(rep,value);
+							}
+						});
+						$('#whipcount_id').text(rep.whipcount_id);
 					}
-				});
-				$('#whipcount_id').text(rep.whipcount_id);
-			 }
+				}
 			}).done(function( data ) {
 			 console.log( "Data Loaded: " + data );
 			});
