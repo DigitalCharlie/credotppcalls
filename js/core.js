@@ -43,25 +43,20 @@
 
 						if (repList.length===1) {
 							var rep = repList [0];
-							$.each(rep_table, function(index, value) {
-								if (value.bioguide_id === rep.bioguide_id) {
-									$.extend(rep,value);
-								}
-							});
-							$('#whipcount_id').text(rep.whipcount_id);
-							$('#rep-name').text(rep.first_name + " " +rep.last_name);
-							$('#phone-number').text(rep.phone);
-							$('#stance').text(rep.disposition);
-							$('#overlay-content-1-rep').removeClass('hidden');
+							populateRep(rep);
 							console.log(rep);
 						} else {
 							$.each(repList, function(index, rep) {
 								var repElement=$('.multiple-reps-li.hidden').clone();
 								repElement.find('.multiple-reps-name').text(rep.first_name + " " +rep.last_name);
 								repElement.removeClass('hidden');
+								repElement.on('click', function(event){
+									populateRep(rep);
+								});
 								$('#multiple-reps-list').append(repElement);
 							});
 							$('#overlay-content-multiple-reps').removeClass('hidden');
+
 
 						}
 							 
@@ -72,6 +67,23 @@
 			});
 	    });
 	});
+
+/* When have just 1 rep */
+
+function populateRep(rep) {
+	$.each(rep_table, function(index, value) {
+		if (value.bioguide_id === rep.bioguide_id) {
+			$.extend(rep,value);
+		}
+	});
+	$('#whipcount_id').text(rep.whipcount_id);
+	$('#rep-name').text(rep.first_name + " " +rep.last_name);
+	$('#phone-number').text(rep.phone);
+	$('#stance').text(rep.disposition);
+	$('#overlay-content-1-rep').removeClass('hidden');
+	$('#overlay-content-multiple-reps').addClass('hidden');
+}
+
 
 /* Controls Overlay */
 	$(function() {
