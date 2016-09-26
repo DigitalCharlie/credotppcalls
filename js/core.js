@@ -49,15 +49,15 @@
 								}
 							});
 							$('#whipcount_id').text(rep.whipcount_id);
-							$('#rep-name').text(rep.first_name);
+							$('#rep-name').text(rep.first_name + " " +rep.last_name);
 							$('#phone-number').text(rep.phone);
 							$('#stance').text(rep.disposition);
 							$('#overlay-content-1-rep').removeClass('hidden');
 							console.log(rep);
 						} else {
 							$.each(repList, function(index, rep) {
-								var repElement=$('.multiple-reps-li').clone();
-								repElement.find('.multiple-reps-name').text(rep.first_name);
+								var repElement=$('.multiple-reps-li.hidden').clone();
+								repElement.find('.multiple-reps-name').text(rep.first_name + " " +rep.last_name);
 								repElement.removeClass('hidden');
 								$('#multiple-reps-list').append(repElement);
 							});
