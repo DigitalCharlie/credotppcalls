@@ -208,6 +208,10 @@
         color: red;
     }
 
+    .input-error {
+        border:4px solid red;
+    }
+
 /* Swing Reps Design */
 
     .keyrep {

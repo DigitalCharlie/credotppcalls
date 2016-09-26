@@ -3,6 +3,8 @@
 	    console.log( "ready!" );
 	    $('#basic-search').on('submit',function(event){
 	    	event.preventDefault();
+	    	$("#zip-error").addClass("hidden");
+			$("#zip-search").removeClass("input-error")
 	    	var lookup_zip = $('#zip-search').val();
 	    	var lookup_data = {
 			 "zip": lookup_zip,
@@ -22,6 +24,7 @@
 
 				if(data.results.length===0){
 					$("#zip-error").removeClass("hidden");
+					$("#zip-search").addClass("input-error")
 				} else {
 
 					var rep;
