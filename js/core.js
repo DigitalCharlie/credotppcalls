@@ -12,47 +12,48 @@
 			};
 
 			$.ajax({
-			 url: 'https://congress.api.sunlightfoundation.com/legislators/locate',
-			 type: 'GET',
-			 data: lookup_data,
-			 dataType: 'jsonp',
-			 jsonp:'callback',
-			 success: function(data, textStatus, jqXHR) {
-				console.log(data);
-				console.log(textStatus);
-				console.log(jqXHR);
+				url: 'https://congress.api.sunlightfoundation.com/legislators/locate',
+				type: 'GET',
+				data: lookup_data,
+				dataType: 'jsonp',
+				jsonp:'callback',
+				success: function(data, textStatus, jqXHR) {
+					console.log(data);
+					console.log(textStatus);
+					console.log(jqXHR);
 
-				if(data.results.length===0){
-					$("#zip-error").removeClass("hidden");
-					$("#zip-search").addClass("input-error")
-				} else {
+					if(data.results.length===0){
+						$("#zip-error").removeClass("hidden");
+						$("#zip-search").addClass("input-error")
+					} else {
 
-					$('.overlay').css('display', 'block');
-			        setTimeout(function() {
-			        	$('.overlay').css('opacity', 1);
-			        }, 50);
+						$('.overlay').css('display', 'block');
+				        setTimeout(function() {
+				        	$('.overlay').css('opacity', 1);
+				        }, 50);
 
-					var repList=[];
-					$.each(data.results, function(index, value) {
-						if (value.chamber === 'house') {
-						   repList.push (value);
-						}
-					});
-
-					if (repList.length===1) {
-						var rep = repList [0];
-						$.each(rep_table, function(index, value) {
-							if (value.bioguide_id === rep.bioguide_id) {
-								$.extend(rep,value);
+						var repList=[];
+						$.each(data.results, function(index, value) {
+							if (value.chamber === 'house') {
+							   repList.push (value);
 							}
 						});
-						$('#whipcount_id').text(rep.whipcount_id);
-						$('#rep-name').text(rep.first_name);
-						$('#phone-number').text(rep.phone);
-						$('#stance').text(rep.disposition);
-						console.log(rep)
+
+						if (repList.length===1) {
+							var rep = repList [0];
+							$.each(rep_table, function(index, value) {
+								if (value.bioguide_id === rep.bioguide_id) {
+									$.extend(rep,value);
+								}
+							});
+							$('#whipcount_id').text(rep.whipcount_id);
+							$('#rep-name').text(rep.first_name);
+							$('#phone-number').text(rep.phone);
+							$('#stance').text(rep.disposition);
+							console.log(rep);
+						}
+							 
 					}
-						 
 				}
 			}).done(function( data ) {
 			 console.log( "Data Loaded: " + data );
