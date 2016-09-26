@@ -1,21 +1,354 @@
-body {
-    
-}
+/* BACKGROUND CSS */
 
-.button {
-    display: inline-block;
-    background: #9085a1;
-    text-align: center;
-    width: 100%;
-    height: 47px;
-    line-height: 50px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color:#ffffff;
-    border-radius: 25px;
-    margin-bottom:10px;
-	max-width: 300px;
-    cursor: pointer;
-}
+    .section {
+        padding-top:20px;
+        padding-left:10%;
+        padding-right:10%;
+        padding-bottom:30px;
+    }
+
+    .top {
+        background-color: #000000;
+        background-image: url("../images/stopthetppsign.png");
+        background-size:100%;
+        background-repeat:no-repeat;
+        color:#ffffff;
+        padding-top:50px;
+        padding-bottom:10px;
+    }
+
+    .blog {
+        background-color: rgb(218, 211, 203);
+        color:#000000;
+        border-top: 8px solid rgb(196, 190, 183);
+    }
+
+    .keyreps {
+        background-color: rgb(255,255,255);
+        color:#000000;
+    }
+
+    .footer {
+        background-color: rgb(37, 37, 37);
+        color:#ffffff;
+
+    }
+
+/* TYPE CSS */
+
+    body {
+        font-family: montserrat;
+        margin:0px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-weight:bold;
+        font-size:36px;
+        text-align:center;
+        text-transform: uppercase;
+        -webkit-text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+        -moz-text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+        margin-bottom:20px;
+
+    }
+
+    h2 {
+        font-weight:bold;
+        font-size:24px;
+        text-align:center;
+        margin-bottom:10px;
+    }
+
+    h3 {
+        font-weight:bold;
+        font-size:18px;
+        margin:0px;
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-weight:bold;
+    }
+
+    .section-subheader {
+        text-align:center;
+        font-style:italic;
+        margin: 0 auto 30px;
+    }
+
+/* Header CSS */
+
+    .header {
+        background-color: rgba(255,103,7,100);
+        position:fixed;
+        height:50px;
+        width:100%;
+        z-index: 1;
+    }
+
+    .header-logo {
+        height:40px;
+        padding:5px 20px;
+        float:left;
+        display: inline-block;
+    }
+
+    .header-buttons {
+        display:none;
+    }
+
+    .header-text {
+        border-right: 1px solid white;
+        text-decoration:none;
+        color:#ffffff;
+        font-weight: bold;
+        font-size:24px;
+        padding-right:15px;
+        vertical-align: top;
+    }
+
+/* Scoreboard Boxes */
+
+    .scoreboard-wrapper {
+        width:100%;
+    }
+
+    .scoreboard-number {
+        font-weight: bold;
+        text-align:center;
+        border: 3px solid #ffffff;
+        border-radius:10px;
+        width:100%;
+        margin-left:-3px;
+        margin-bottom:15px;
+    }
+
+    .number {
+        font-size:36px;
+    }
+
+    .stance {
+        font-size:18px;
+        text-transform: uppercase;
+        width:300px;
+        max-width:75%;
+        margin:0 auto 5px;
+    }
+
+/* Form Design */
+
+    button {
+        display: inline-block;
+        background: rgba(255,103,7,100);
+        text-align: center;
+        padding:8px 20px;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:#ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        border-style: none;
+    }
+
+    button:hover {
+        background: #cc4f00;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
+    .submit-button {
+        box-shadow: 0 1px 10px rgba(0,0,0,.4);
+        width:100%;
+    }
+
+    .home-fields-wrapper {
+        width:525px;
+        margin: 15px auto;
+        max-width: 100%;
+    }
+
+    .basic-search {
+
+    }
+
+    .zip-input {
+        height: 44px;
+        border: none;
+        vertical-align: bottom;
+        border-radius: 5px;
+        box-shadow: 0 1px 10px rgba(0,0,0,.4);
+        font-size: 24px;
+        text-indent: 10px;
+        width: 100%;
+        margin-right:1%;
+        color:grey;
+        padding:0px;
+        margin-bottom:15px;
+    }
+
+/* Swing Reps Design */
+
+    .keyrep {
+
+    }
+
+    .rep-image {
+        display: block;
+        height:200px;
+        margin:10px auto;
+        width:166.66px;
+    }
+
+    .rep-details {
+
+    }
+
+    .call-key-rep {
+        font-size:18px;
+        margin-bottom:25px;
+        width:100%;
+    }
+
+    .key-rep-desc {
+        padding-left: 25px;
+    }
+
+/* Overlay Styles */
+
+    .overlay {
+        height: 90%;
+        width: 90%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.66);
+        overflow-x: hidden;
+        transition: .7s;
+        padding:5% 5%;
+        display:none;
+        opacity:0;
+    }
+
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color:#ffffff;
+        border-radius:10px;
+        z-index: 4;
+    }
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    /* Header */
+
+        .header-buttons {
+            height:30px;
+            padding:5px 20px;
+            float:right;
+            margin-top:5px;
+        }
+
+    /* Type */
+
+        h1 {
+            font-size:70px;
+        }
+
+        h2 {
+            font-size:40px;
+        }
+
+        h3 {
+            font-size:24px;
+        }
+
+        p {
+            font-size:18px;
+        }
+
+    /* Swing Reps */
+
+        .keyrep {
+            width:650px;
+            margin:10px auto;
+        }
+
+        .rep-image {
+            float:left;
+            display:inline-block;
+            height:200px;
+            margin-right:20px;
+        }
+
+        .key-rep-desc {
+            padding-left:0;
+        }
+
+        .call-key-rep {
+            width:auto;
+            min-width: 250px;
+        }
+
+    /* Form styles */
+        .zip-input {
+            max-width: 285px;
+            margin-bottom: 0px;
+        }
+
+        .submit-button {
+            width:220px;
+        }
+
+        .home-fields-wrapper {
+            margin: 40px auto;
+        }
+
+    /* Scoreboard Design */
+
+        .scoreboard-wrapper {
+            width:800px;
+            margin:0 auto;
+        }
+
+        .scoreboard-number {
+            float:left;
+            width:26%;
+            margin: 0 2.5%;
+            padding:5px;
+        }
+
+        .number {
+            font-size:70px;
+        }
+
+        .stance {
+            margin:-10px auto 10px;
+            font-size:24px;
+        }
+
+    /* Overlay Styles */
+
+        .overlay-content {
+            width: 600px;
+            height: 500px;
+            max-height:80vh;
+            margin:0 auto;
+        }
+
+
+

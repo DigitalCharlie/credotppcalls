@@ -1,67 +1,707 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Home
+---
+      <div class="top section v1" style="display:none;">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="CREDO Mobile">
-    <meta property="og:title" content="description text"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content="images/"/>
-    <meta property="og:site_name" content=""/>
-    <meta property="fb:admins" content="612663871"/>
-    <meta property="og:description" content=""/>
-    <meta property="twitter:title" content="" />
-    <meta property="twitter:description" content="" />
-    <title>I Hate you, TPP.</title>
-    <link href="css/credohousecalls.css" rel="stylesheet"/>
-    <link rel="shortcut icon" href="images/favicon.ico"/>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="//act.credoaction.com/resources/actionkit.js"></script>
-    <script type="text/javascript" src="/js/repdata.js"></script>
-    <script type="text/javascript" src="/js/core.js"></script>
+          <h1>
+              Stop the TPP
+          </h1>
 
+          <h2>
+              Is your representative for or against the TPP? Help us find out! Enter your zip code and we’ll connect you to your representative.
+          </h2>
 
-</head>
-<body>
+      </div>
 
-    <input name="lookup_zip" id="lookup_zip" type="text" class="form-control" placeholder="Enter your zip code">
-    <div class="button" id="lookup_submit">Go</div>
+      <div class="top section v2">
 
-    <div id="rep_name"></div>
-    <div id="whipcount_id"></div>
+          <h1>
+              The Fight Against the TPP is too Close.
+          </h1>
 
+              <a  name="take-action"></a>
 
-    <form role="form" method="POST" action="//act.credoaction.com/act/" id="ak-form" name="ak-form">
+          <div class="scoreboard-wrapper">
 
-            <div class="form-group"><input type="text" class="form-control" name="name" placeholder="name"></div>
-            <div class="form-group"><input type="email" class="form-control" name="email" placeholder="email"></div>
-            <div class="form-group"><input type="text" class="form-control" name="zip" placeholder="zip code"></div>
-            <textarea id="id_action_survey" name="action_survey" class="ak-has-overlay"></textarea>
+              <div class="scoreboard-number">
+                  <div class="number">188</div>
+                  <div class="stance">Support the TPP</div>
+              </div>
 
-            <button type="submit" class="btn btn-ak">Submit</button>
+              <div class="scoreboard-number">
+                  <div class="number">208</div>
+                  <div class="stance">Oppose the TPP</div>
+              </div>
 
-            <input name="page" value="tpp-whipcount-2016" type="hidden" />
-            <input name="action_referrer" value="" type="hidden" />
-            <input name="country" value="United States" type="hidden" />
-            <input name="lists" value="1" type="hidden" />
-                            
-      </form>
+              <div class="scoreboard-number">
+                  <div class="number">39</div>
+                  <div class="stance">Have not Decided</div>
+              </div>
 
-      <script type="text/javascript">
-        actionkit.forms.contextRoot = '//act.credoaction.com/context/';
-        actionkit.forms.initPage(); actionkit.forms.initForm('act');
-        actionkit.utils.appendHiddenInput('action_referrer', document.referrer);
-      </script>
+              <div style="clear: both;"></div>
 
-      <script>
-        console.log(rep_table);
-      </script>
+          </div>
+
+          <div class="home-fields-wrapper">
+
+              <form id="basic-search"> 
+
+                  <input name="zip" id="zip-search" type="text" class="zip-input" placeholder="Enter your zip code">
+
+                  <button type="submit" class="submit-button">Take Action</button>
+
+              </form>
+
+              <button id="test">Test</button>
+
+          </div>
+
+      </div>
 
 
-</body>
-</html>
+    <div class="blog section">
+
+        <h2>
+            Members of Congress Speak Out on the TPP.
+        </h2>
+  
+        {% for post in site.posts %}
+          <div class="blog-post">
+            <h4 class="blog-post-title">
+              <a href="{{ site.baseurl }}/{{ post.url }}">
+                {{ post.title }}
+                <img src="{{ post.screenshot_url }}">
+              </a>
+            </h4>
+            {{ post.excerpt }}
+          </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="keyreps section">
+
+        <h2 title>Who are the Swing Representatives?</h2>
+
+        <p class="section-subheader">Below are the members of Congress whose votes will be critical to defeating the job killing TPP. Let’s show them  the growing  opposition to this massive corporate power grab.</p>
+
+        <div class="keyrep">
+
+            <img src="images/brad-ashford.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Brad Ashford (D-NE 2)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Ashford</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/ami-bera.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Ami Bera (D-CA 7)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Bera</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/don-beyer.jpeg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Don Beyer (D-VA 8)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Beyer</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/earl-blumenauer.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Earl Blumenauer (D-OR 3)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Blumenauer</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/suzanne-bonamici.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Suzanne Bonamici (D-OR 1)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Bonamici</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/gerry-connolly.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Gerry Connolly (D-VA 11)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Connolly</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/jim-cooper.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Jim Cooper (D-TN 5)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Cooper</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/jim-costa.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Jim Costa (D-CA 16)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Costa</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/henry-cuellar.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Henry Cuellar (D-TX 28)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Cuellar</button>
+
+            <div style="clear: both;"></div>
+
+        </div>        
+
+        <div class="keyrep">
+
+            <img src="images/susan-davis.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Susan Davis (D-CA 53)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Davis</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/john-delaney.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative John Delaney (D-MD 6)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Delaney</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/suzan-delbene.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Suzan DelBene (D-WA 1)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. DelBene</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/sam-farr.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Sam Farr (D-CA 20)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Farr</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/jim-himes.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Jim Himes (D-CT 4)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Himes</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/ruben-hinojosa.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Ruben Hinojosa (D-TX 15)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Hinojosa</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/eddie-johnson.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Eddie Johnson (D-TX 30)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Johnson</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/derek-kilmer.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Derek Kilmer (D-WA 6)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Kilmer</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/ron-kind.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Ron Kind (D-WI 3)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Kind</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/rick-larsen.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Rick Larsen (D-WA 2)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Larsen</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/gregory-meeks.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Gregory Meeks (D-NY 5)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Meeks</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/beto-orourke.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Beto O'Rourke (D-TX 16)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. O'Rourke</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/scott-peters.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Scott Peters (D-CA 52)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Peters</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/jared-polis.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Jared Polis (D-CO 2)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Polis</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/mike-quigley.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Mike Quiqley (D-IL 5)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Quigley</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/kathleen-rice.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Kathleen Rice (D-NY 4)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Rice</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/kurt-schrader.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Kurt Schrader (D-OR 5)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Schrader</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/terri-sewell.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Terri Sewell (D-AL 7)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Sewell</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="keyrep">
+
+            <img src="images/debbie-wasserman-schultz.jpg" class="rep-image" style="height:250px;">
+
+            <div class="rep-details">
+
+                <h3>Representative Debbie Wasserman Schultz (D-FL 23)</h3>
+
+                <p class="key-rep-desc">
+                    Chief of Staff: Name <br />
+                    Key Issues: List of issues <br />
+                    Quotes about the TPP: none. <br />
+                </p>
+
+            </div>
+
+            <button class="call-key-rep">Call Rep. Wasserman Schultz</button>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+
+    </div>
+

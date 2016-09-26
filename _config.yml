@@ -1,0 +1,13 @@
+# Setup
+title:               Credo TPP Whipcount
+tagline:             'tagline?'
+description:         'description?'
+url:                 http://max-b.github.io/credotppcalls
+baseurl:             /credotppcalls
+
+# About/contact
+author:
+  name:              Charlie Furman
+  url:               https://twitter.com/furmanatorjr
+  email:             furman.jr@gmail.com
+

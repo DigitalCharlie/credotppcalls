@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+      <div class="header">
+
+          <div class="header-logo">
+
+            <a href="http://www.credoaction.com" target="_blank"><img src="{{site.baseurl}}/images/credo-action-logo.png" style="height:40px;"></a>
+
+          </div>
+
+          <div class="header-buttons">
+
+              <a href="#take-action" class="header-text">TAKE ACTION</a>
+
+                  <a href="#"><img src="{{site.baseurl}}/images/facebook-icon.png" style="height:23px; padding: 3px 5px 0px 15px;"></a>
+
+                  <a href="#"><img src="{{site.baseurl}}/images/twitter-icon.png" style="height:23px; padding: 3px 5px 0px 5px;"></a>
+
+          </div>
+
+      </div>
+
+      <div id="overlay" class="overlay">
+          <div id="overlay-content" class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+          </div>
+      </div>
+
+
+
+      <div class="container content">
+        {{ content }}
+      </div>
+
+    <div class="footer">
+
+    </div>
+
+</body>
+</html>
