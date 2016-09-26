@@ -27,22 +27,32 @@
 					$("#zip-search").addClass("input-error")
 				} else {
 
-					var rep;
-					$.each(data.results, function(index, value) {
-						 if (value.chamber === 'house') {
-						   rep = value;
-						 }
-						});
-						 $('#rep_name').text(rep.first_name);
-						 $('#phone_number').text(rep.phone);
+					$('.overlay').css('display', 'block');
+			        setTimeout(function() {
+			        	$('.overlay').css('opacity', 1);
+			        }, 50);
 
+					var repList=[];
+					$.each(data.results, function(index, value) {
+						if (value.chamber === 'house') {
+						   repList.push (value);
+						}
+					});
+
+					if (repList.length===1) {
+						var rep = repList [0];
 						$.each(rep_table, function(index, value) {
 							if (value.bioguide_id === rep.bioguide_id) {
 								$.extend(rep,value);
 							}
 						});
 						$('#whipcount_id').text(rep.whipcount_id);
+						$('#rep-name').text(rep.first_name);
+						$('#phone-number').text(rep.phone);
+						$('#stance').text(rep.disposition);
+						console.log(rep)
 					}
+						 
 				}
 			}).done(function( data ) {
 			 console.log( "Data Loaded: " + data );
@@ -61,15 +71,11 @@
 	});
 
 	$(function() {
-	    $("#overlay").click(function() {
+	    $("#theX").click(function() {
 	        $('.overlay').css('display', 'none');
 	        setTimeout(function() {
-	          $('.overlay').css('opacity', 0);
-	          }, 50);
-	    });
-
-	    $('#overlay-content').click(function(e) {
-	        e.stopPropagation();
+	        $('.overlay').css('opacity', 0);
+	        }, 50);
 	    });
 	});
 

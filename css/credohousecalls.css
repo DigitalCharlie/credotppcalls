@@ -257,7 +257,7 @@
         opacity:0;
     }
 
-    .overlay-content {
+    .overlay-container {
         position: relative;
         width: 100%;
         height: 100%;
@@ -267,8 +267,9 @@
         z-index: 4;
     }
 
+    .overlay-content {
 
-
+    }
 
 @media screen and (min-width: 800px) {
 
@@ -361,7 +362,7 @@
 
     /* Overlay Styles */
 
-        .overlay-content {
+        .overlay-container {
             width: 600px;
             height: 500px;
             max-height:80vh;
