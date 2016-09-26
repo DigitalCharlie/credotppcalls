@@ -7,7 +7,7 @@ var rep_table= [
 {first_name: "Rick",last_name: "Allen",bioguide_id: "A000372",disposition: "supports",whipcount_id: "7765"},
 {first_name: "Justin",last_name: "Amash",bioguide_id: "A000367",disposition: "oppose",whipcount_id: "7661"},
 {first_name: "Mark",last_name: "Amodei",bioguide_id: "A000369",disposition: "supports",whipcount_id: "8062"},
-{first_name: "Brad",last_name: "Ashford",bioguide_id: "A000373",disposition: "unknown",whipcount_id: "7959"},
+{first_name: "Brad",last_name: "Ashford",bioguide_id: "A000373",disposition: "unknown",whipcount_id: "7959", phone: "202-225-4155"},
 {first_name: "Brian",last_name: "Babin",bioguide_id: "B001291",disposition: "supports",whipcount_id: "8184"},
 {first_name: "Lou",last_name: "Barletta",bioguide_id: "B001269",disposition: "supports",whipcount_id: "7890"},
 {first_name: "Garland",last_name: "Barr",bioguide_id: "B001282",disposition: "supports",whipcount_id: "8052"},
