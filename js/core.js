@@ -50,7 +50,7 @@
 							$('#rep-name').text(rep.first_name);
 							$('#phone-number').text(rep.phone);
 							$('#stance').text(rep.disposition);
-							$('overlay-content-1-rep').removeClass(hidden);
+							$('overlay-content-1-rep').removeClass('hidden');
 							console.log(rep);
 						} else {
 							$.each(repList, function(index, rep) {
@@ -59,7 +59,7 @@
 								repElement.removeClass('hidden');
 								$('#multiple-reps-list').append(repElement);
 							});
-							$('overlay-content-multiple-reps').removeClass(hidden);
+							$('overlay-content-multiple-reps').removeClass('hidden');
 
 						}
 							 
