@@ -1,3 +1,9 @@
+/* Global stuff */
+
+    .hidden {
+        display:none;
+    }
+
 /* BACKGROUND CSS */
 
     .section {
@@ -192,6 +198,14 @@
         color:grey;
         padding:0px;
         margin-bottom:15px;
+        box-sizing: border-box;
+    }
+
+    .error-message {
+        font-size: 14px;
+        text-align: center;
+        font-style: italic;
+        color: red;
     }
 
 /* Swing Reps Design */

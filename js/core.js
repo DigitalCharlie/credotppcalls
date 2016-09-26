@@ -1,8 +1,8 @@
 /* Runs lookup */
 	$(function() {
 	    console.log( "ready!" );
-	    $('#lookup_submit').on('click',function(event){
-	    	var lookup_zip = $('#lookup_zip').val()
+	    $('#zip-submit').on('click',function(event){
+	    	var lookup_zip = $('#zip-search').val()
 	    	var lookup_data = {
 			 "zip": lookup_zip,
 			 "apikey": "593843c677374434b1d1403432d034ed",
