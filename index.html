@@ -1,124 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Home
+---
+      <div class="top section v1" style="display:none;">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="CREDO Mobile">
-    <meta property="og:title" content="description text"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content="images/"/>
-    <meta property="og:site_name" content=""/>
-    <meta property="fb:admins" content="612663871"/>
-    <meta property="og:description" content=""/>
-    <meta property="twitter:title" content="" />
-    <meta property="twitter:description" content="" />
-    <title>Stop the TPP.</title>
-    <link href="css/credohousecalls.css" rel="stylesheet"/>
-    <link rel="shortcut icon" href="images/favicon.ico"/>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="//act.credoaction.com/resources/actionkit.js"></script>
-    <script type="text/javascript" src="js/repdata.js"></script>
-    <script type="text/javascript" src="js/core.js"></script>
+          <h1>
+              Stop the TPP
+          </h1>
 
-</head>
-<body>
+          <h2>
+              Is your representative for or against the TPP? Help us find out! Enter your zip code and we’ll connect you to your representative.
+          </h2>
 
-    <div class="header">
+      </div>
 
-        <div class="header-logo">
+      <div class="top section v2">
 
-            <a href="http://www.credoaction.com" target="_blank"><img src="images/credo-action-logo.png" style="height:40px;"></a>
+          <h1>
+              The Fight Against the TPP is too Close.
+          </h1>
 
-        </div>
+              <a  name="take-action"></a>
 
-        <div class="header-buttons">
+          <div class="scoreboard-wrapper">
 
-            <a href="#take-action" class="header-text">TAKE ACTION</a>
+              <div class="scoreboard-number">
+                  <div class="number">188</div>
+                  <div class="stance">Support the TPP</div>
+              </div>
 
-                <a href="#"><img src="images/facebook-icon.png" style="height:23px; padding: 3px 5px 0px 15px;"></a>
+              <div class="scoreboard-number">
+                  <div class="number">208</div>
+                  <div class="stance">Oppose the TPP</div>
+              </div>
 
-                <a href="#"><img src="images/twitter-icon.png" style="height:23px; padding: 3px 5px 0px 5px;"></a>
+              <div class="scoreboard-number">
+                  <div class="number">39</div>
+                  <div class="stance">Have not Decided</div>
+              </div>
 
-        </div>
+              <div style="clear: both;"></div>
 
-    </div>
+          </div>
 
-    <div class="top section v1" style="display:none;">
+          <div class="home-fields-wrapper">
 
-        <h1>
-            Stop the TPP
-        </h1>
+              <form id="basic-search"> 
 
-        <h2>
-            Is your representative for or against the TPP? Help us find out! Enter your zip code and we’ll connect you to your representative.
-        </h2>
+                  <input name="zip" id="zip-search" type="text" class="zip-input" placeholder="Enter your zip code">
 
-    </div>
+                  <button type="submit" class="submit-button">Take Action</button>
 
-    <div class="top section v2">
+              </form>
 
-        <h1>
-            The Fight Against the TPP is too Close.
-        </h1>
+              <button id="test">Test</button>
 
-            <a  name="take-action"></a>
+          </div>
 
-        <div class="scoreboard-wrapper">
+      </div>
 
-            <div class="scoreboard-number">
-                <div class="number">188</div>
-                <div class="stance">Support the TPP</div>
-            </div>
-
-            <div class="scoreboard-number">
-                <div class="number">208</div>
-                <div class="stance">Oppose the TPP</div>
-            </div>
-
-            <div class="scoreboard-number">
-                <div class="number">39</div>
-                <div class="stance">Have not Decided</div>
-            </div>
-
-            <div style="clear: both;"></div>
-
-        </div>
-
-        <div class="home-fields-wrapper">
-
-            <form id="basic-search"> 
-
-                <input name="zip" id="zip-search" type="text" class="zip-input" placeholder="Enter your zip code">
-
-                <button type="submit" class="submit-button">Take Action</button>
-
-            </form>
-
-            <button id="test">Test</button>
-
-        </div>
-
-    </div>
-
-    <div id="overlay" class="overlay">
-        <div id="overlay-content" class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>
 
     <div class="blog section">
 
         <h2>
             Members of Congress Speak Out on the TPP.
         </h2>
+  
+        {% for post in site.posts %}
+          <div class="blog-post">
+            <h4 class="blog-post-title">
+              <a href="{{ site.baseurl }}/{{ post.url }}">
+                {{ post.title }}
+                <img src="{{ post.screenshot_url }}">
+              </a>
+            </h4>
+            {{ post.excerpt }}
+          </div>
+        {% endfor %}
 
     </div>
 
@@ -747,9 +705,3 @@
 
     </div>
 
-    <div class="footer">
-
-    </div>
-
-</body>
-</html>
