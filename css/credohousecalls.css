@@ -8,7 +8,7 @@
     }
 
     .top {
-        background-color: rgb(37, 37, 37);
+        background-color: #000000;
         background-image: url("../images/stopthetppsign.png");
         background-size:100%;
         background-repeat:no-repeat;
@@ -42,12 +42,12 @@
     }
 
     p {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     h1 {
         font-weight:bold;
-        font-size:80px;
+        font-size:36px;
         text-align:center;
         text-transform: uppercase;
         -webkit-text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
@@ -59,14 +59,15 @@
 
     h2 {
         font-weight:bold;
-        font-size:36px;
+        font-size:24px;
         text-align:center;
         margin-bottom:10px;
     }
 
     h3 {
         font-weight:bold;
-        font-size:24px;
+        font-size:18px;
+        margin:0px;
     }
 
     .title {
@@ -98,10 +99,7 @@
     }
 
     .header-buttons {
-        height:30px;
-        padding:5px 20px;
-        float:right;
-        margin-top:5px;
+        display:none;
     }
 
     .header-text {
@@ -117,8 +115,7 @@
 /* Scoreboard Boxes */
 
     .scoreboard-wrapper {
-        width:800px;
-        margin:0 auto;
+        width:100%;
     }
 
     .scoreboard-number {
@@ -126,22 +123,21 @@
         text-align:center;
         border: 3px solid #ffffff;
         border-radius:10px;
-        padding:5px;
-        float:left;
-        width:26%;
-        margin: 0 2.5%;
+        width:100%;
+        margin-left:-3px;
+        margin-bottom:15px;
     }
 
     .number {
-        font-size:70px;
+        font-size:36px;
     }
 
     .stance {
-        font-size:24px;
+        font-size:18px;
         text-transform: uppercase;
         width:300px;
         max-width:75%;
-        margin:-10px auto 10px;
+        margin:0 auto 5px;
     }
 
 /* Form Design */
@@ -166,18 +162,17 @@
         background: #cc4f00;
         transition-duration: .5s;
         -webkit-transition-duration: .5s;
-
-
-
     }
 
     .submit-button {
         box-shadow: 0 1px 10px rgba(0,0,0,.4);
+        width:100%;
     }
 
     .home-fields-wrapper {
         width:525px;
-        margin: 40px auto;
+        margin: 15px auto;
+        max-width: 100%;
     }
 
     .basic-search {
@@ -185,31 +180,31 @@
     }
 
     .zip-input {
-        height: 41px;
+        height: 44px;
         border: none;
         vertical-align: bottom;
         border-radius: 5px;
         box-shadow: 0 1px 10px rgba(0,0,0,.4);
         font-size: 24px;
-        padding-left: 10px;
+        text-indent: 10px;
         width: 100%;
-        max-width: 285px;
         margin-right:1%;
         color:grey;
+        padding:0px;
+        margin-bottom:15px;
     }
 
 /* Swing Reps Design */
 
     .keyrep {
-        width:650px;
-        margin:10px auto;
+
     }
 
     .rep-image {
-        float:left;
-        display:inline-block;
+        display: block;
         height:200px;
-        margin-right:20px;
+        margin:10px auto;
+        width:166.66px;
     }
 
     .rep-details {
@@ -218,13 +213,104 @@
 
     .call-key-rep {
         font-size:18px;
+        margin-bottom:25px;
+        width:100%;
+    }
+
+    .key-rep-desc {
+        padding-left: 25px;
     }
 
 
 
 @media screen and (min-width: 800px) {
 
+    /* Header */
 
+        .header-buttons {
+            height:30px;
+            padding:5px 20px;
+            float:right;
+            margin-top:5px;
+        }
+
+    /* Type */
+
+        h1 {
+            font-size:70px;
+        }
+
+        h2 {
+            font-size:40px;
+        }
+
+        h3 {
+            font-size:24px;
+        }
+
+        p {
+            font-size:18px;
+        }
+
+    /* Swing Reps */
+
+        .keyrep {
+            width:650px;
+            margin:10px auto;
+        }
+
+        .rep-image {
+            float:left;
+            display:inline-block;
+            height:200px;
+            margin-right:20px;
+        }
+
+        .key-rep-desc {
+            padding-left:0;
+        }
+
+        .call-key-rep {
+            width:auto;
+            min-width: 250px;
+        }
+
+    /* Form styles */
+        .zip-input {
+            max-width: 285px;
+            margin-bottom: 0px;
+        }
+
+        .submit-button {
+            width:220px;
+        }
+
+        .home-fields-wrapper {
+            margin: 40px auto;
+        }
+
+    /* Scoreboard Design */
+
+        .scoreboard-wrapper {
+            width:800px;
+            margin:0 auto;
+        }
+
+        .scoreboard-number {
+            float:left;
+            width:26%;
+            margin: 0 2.5%;
+            padding:5px;
+        }
+
+        .number {
+            font-size:70px;
+        }
+
+        .stance {
+            margin:-10px auto 10px;
+            font-size:24px;
+        }
 
 
 
