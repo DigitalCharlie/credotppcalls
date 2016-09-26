@@ -57,7 +57,7 @@
 						} else {
 							$.each(repList, function(index, rep) {
 								var repElement=$('.multiple-reps-li').clone();
-								repElement.find('.multiple-reps-name').val(rep.first_name);
+								repElement.find('.multiple-reps-name').text(rep.first_name);
 								repElement.removeClass('hidden');
 								$('#multiple-reps-list').append(repElement);
 							});
