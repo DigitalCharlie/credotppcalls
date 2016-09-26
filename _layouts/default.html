@@ -30,8 +30,46 @@
               <span id="the-x" class="the-x">X</span>
 
               <div id="overlay-content-1-rep" class="overlay-content hidden">
-                <h3>Representative <span id="rep-name"></span> <span id="stance"></span> the TPP.</h3>
-                <h3>Call them now at <br /><span id="phone-number"></span>
+                <div id="page-1">
+                  <h3>Representative <span id="rep-name"></span> <span id="stance"></span> the TPP.</h3>
+                  <h3>Call them now at <br /><span id="phone-number"></span></h3>
+                </div>
+                <div id="page-2">
+                  <form role="form" method="POST" action="//act.credoaction.com/act/" id="ak-form" name="ak-form">
+
+                    <ul class="responses">
+                      <li>
+                        <label class="for-radio"><span><input type="radio" name="response-" value="uncommitted"></span>Uncommitted</label>
+                      </li>
+                      <li>
+                        <label class="for-radio"><span><input type="radio" name="response-" value="supportive"></span>Supportive of our position</label>
+                      </li>
+                      <li>
+                        <label class="for-radio"><span><input type="radio" name="response-" value="opposed"></span>Opposed to our position</label>
+                      </li>
+                      <li>
+                        <label class="for-radio"><span><input type="radio" name="response-" value="left a message"></span>Left a message</label>
+                      </li>
+                      <li>
+                        <label class="for-radio"><span><input type="radio" name="response-" value="unreachable"></span>Did not answer the phone</label>
+                      </li>
+                    </ul>
+
+                    <div class="form-group"><input type="text" class="form-control" name="name" placeholder="name"></div>
+                    <div class="form-group"><input type="email" class="form-control" name="email" placeholder="email"></div>
+                    <div class="form-group"><input type="text" class="form-control" name="zip" placeholder="zip code"></div>
+                    <textarea id="id_action_survey" name="action_survey" class="ak-has-overlay"></textarea>
+
+                    <button type="submit" class="btn btn-ak">Submit</button>
+
+                    <!-- HIDDEN FIELDS DO NOT TOUCH -->
+                      <input name="page" value="tpp-whipcount-2016" type="hidden" />
+                      <input name="action_referrer" value="" type="hidden" />
+                      <input name="country" value="United States" type="hidden" />
+                      <input name="lists" value="1" type="hidden" />
+                                        
+                  </form>
+                </div>
               </div>
 
               <div id="overlay-content-multiple-reps" class="overlay-content hidden">
@@ -55,6 +93,12 @@
     <div class="footer">
 
     </div>
+
+  <script type="text/javascript">
+    actionkit.forms.contextRoot = '//act.credoaction.com/context/';
+    actionkit.forms.initPage(); actionkit.forms.initForm('act');
+    actionkit.utils.appendHiddenInput('action_referrer', document.referrer);
+  </script>
 
 </body>
 </html>

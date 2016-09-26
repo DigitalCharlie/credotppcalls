@@ -77,12 +77,12 @@ function populateRep(rep) {
 			$.extend(rep,value);
 		}
 	});
-	$('#whipcount_id').text(rep.whipcount_id);
 	$('#rep-name').text(rep.first_name + " " +rep.last_name);
 	$('#phone-number').text(rep.phone);
 	$('#stance').text(rep.disposition);
 	$('#overlay-content-1-rep').removeClass('hidden');
 	$('#overlay-content-multiple-reps').addClass('hidden');
+	$('#ak-form input[type="radio"]').prop('name', 'response-' + rep.whipcount_id);
 }
 
 
