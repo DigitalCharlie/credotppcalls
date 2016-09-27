@@ -190,6 +190,10 @@
         -webkit-transition-duration: .5s;
     }
 
+    .thank-you-buttons {
+        margin-bottom:30px;
+    }
+
 /* Form Design */
 
     button {
