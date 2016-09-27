@@ -311,7 +311,7 @@
 
 /* Footer styles */
 
-    .footer-container {
+    .footer-content {
         width:800px;
         max-width: 100%;
         margin:10px; auto;
@@ -322,10 +322,12 @@
         text-decoration: none;
         color:#ffffff;
         font-size:14px;
+        text-align: center;
+        font-weight:normal;
     }
 
     .footer-buttons {
-        width:100px;
+        width:110px;
         margin:0 auto;
     }
 
