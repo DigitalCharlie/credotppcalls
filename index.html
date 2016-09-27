@@ -69,10 +69,10 @@ title: Home
         {% for post in site.posts %}
           <div class="blog-post">
             <h4 class="blog-post-title">
-              <a href="{{ site.baseurl }}/{{ post.url }}">
+                <a href="{{ site.baseurl }}/{{ post.url }}">
                 {{ post.title }}
-                <img src="{{ post.screenshot_url }}">
-              </a>
+                    <img src="{{ post.screenshot_url }}" class="blog-post-image">
+                </a>
             </h4>
             {{ post.excerpt }}
           </div>
