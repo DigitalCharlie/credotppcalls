@@ -370,7 +370,7 @@
         width:800px;
         max-width: 100%;
         margin:0 auto;
-        padding: 20px 0 40px 0;
+        padding: 40px 0 40px 0;
     }
 
     .footer-text {
@@ -401,7 +401,7 @@
     .container {
         padding-top:50px;
         margin:0 10px;
-        min-height:82vh;
+        min-height:80vh;
     }
 
     .post-title {
