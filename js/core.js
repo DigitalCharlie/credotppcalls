@@ -137,5 +137,4 @@ function populateRep(rep) {
 	        $('.page-2').css('opacity', 1);
 	        }, 50);
 	    });
-
 	});
