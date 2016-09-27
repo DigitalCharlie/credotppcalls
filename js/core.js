@@ -112,6 +112,11 @@ function populateRep(rep) {
 	        setTimeout(function() {
 	        $('.overlay').css('opacity', 0);
 	        }, 50);
+
+	       	$('.page-1').css('display', 'block');
+	        $('.page-1').css('opacity', 1);
+	        $('.page-2').css('display', 'block');
+	        $('.page-2').css('opacity', 10);
 	    });
 
 	    $("#header-take-action").click(function() {
@@ -119,3 +124,18 @@ function populateRep(rep) {
 	    });
 	});
 
+/* How'd it go button */
+
+	$(function() {
+		$("#how-did-it-go").click(function() {
+	        $('.page-1').css('display', 'none');
+	        setTimeout(function() {
+	        $('.page-1').css('opacity', 0);
+	        }, 50);
+	        $('.page-2').css('display', 'block');
+	        setTimeout(function() {
+	        $('.page-2').css('opacity', 1);
+	        }, 50);
+	    });
+
+	});

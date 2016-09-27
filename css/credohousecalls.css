@@ -340,6 +340,16 @@
         cursor:pointer;
     }
 
+    .page-1 {
+        transition: .7s;
+    }
+
+    .page-2 {
+        transition: .7s;
+        opacity:0;
+        display:none;
+    }
+
 /* Blog Posts on Home Page */
 
     .blog-post-image {
