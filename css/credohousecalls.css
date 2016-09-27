@@ -358,11 +358,15 @@
     .container {
         padding-top:50px;
         width:100%;
-        margin:0 10px;
+        margin:0 25px;
     }
 
     .post-title {
         margin-top:30px;
+    }
+
+    .thank-you {
+        padding-top:0;
     }
 
 
@@ -492,4 +496,9 @@
         }
 
     /* BLOG POSTS THEMSELVES */
+
+        .container {
+            width:700px;
+            margin:0 auto;
+        }
 
