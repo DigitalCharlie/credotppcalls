@@ -116,7 +116,6 @@ function populateRep(rep) {
 
 	    $("#header-take-action").click(function() {
 	    	$('#zip-search').focus();
-	    	console.log(action)
 	    });
 	});
 
