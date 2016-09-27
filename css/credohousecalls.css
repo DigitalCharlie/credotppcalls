@@ -324,7 +324,6 @@
     }
 
     .overlay-content {
-        padding:20px;
     }
 
     .the-x {
@@ -352,6 +351,12 @@
 
     .overlay-headline {
         font-size:24px;
+        padding: 10px 20px 0;
+    }
+
+    .script {
+        padding:20px;
+        background: rgb(218, 211, 203);
     }
 
 /* Blog Posts on Home Page */
