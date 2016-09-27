@@ -37,7 +37,6 @@
     .footer {
         background-color: rgb(37, 37, 37);
         color:#ffffff;
-
     }
 
 /* TYPE CSS */
@@ -308,6 +307,12 @@
 
     .blog-post-title {
         margin:0;
+    }
+
+/* Footer styles */
+
+    .footer-text {
+        font-style: italic;
     }
 
 
