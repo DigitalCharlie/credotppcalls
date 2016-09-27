@@ -436,6 +436,11 @@
         padding-top:0;
     }
 
+    .video-embed {
+        width:350px;
+        height:196.875px;
+    }
+
 
 @media screen and (min-width: 800px) {
 
@@ -571,6 +576,11 @@
         .post, .thank-you-page {
             width:750px;
             margin:0 auto;
+        }
+
+        .video-embed {
+            width:560px;
+            height:315px;
         }
 
     /* button styles */
