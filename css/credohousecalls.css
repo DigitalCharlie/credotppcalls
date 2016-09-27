@@ -439,17 +439,24 @@
     .video-embed {
         width:350px;
         height:196.875px;
+        display:block;
+        margin:0 auto;
     }
 
     .video-share-container {
-        margin: 10px 0 20px;
+        margin: 10px auto 20px;
         width: 350px;
+        display: block;
     }
 
     .video-share-button {
         font-size:14px;
         width:100%;
         margin-top:10px;
+    }
+
+    .post {
+        padding:0 10px;
     }
 
 
@@ -592,11 +599,12 @@
         .video-embed {
             width:560px;
             height:315px;
-            margin:0 auto;
+            margin:0;
         }
 
         .video-share-container {
             width: 560px;
+            margin: 10px 0 20px;
         }
 
         .video-share-button{
