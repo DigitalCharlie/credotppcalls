@@ -48,7 +48,7 @@
     }
 
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     h1 {
@@ -283,16 +283,14 @@
 /* Blog Posts on Home Page */
 
     .blog-post-image {
-        max-width:100%;
+        width:100%;
         margin:5px auto 0;
+        max-width:400px;
     }
 
     .blog-post {
-        max-width:100%;
-        width:31.33%;
-        margin:1%;
+        width:100%;
         text-align: center;
-        float:left;
     }
 
     .blog-post-link {
@@ -404,5 +402,16 @@
             margin:0 auto;
         }
 
+    /* Blog Posts on Home Page */
+
+        .blog-post {
+            width:31.33%;
+            float:left;
+            margin:1%;
+        }
+
+        .blog-post-image {
+            max-width:auto;
+        }
 
 
