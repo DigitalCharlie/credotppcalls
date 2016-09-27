@@ -181,7 +181,7 @@
     }
 
     .share-button {
-        
+        width: 100%;
     }
 
     .share-button:hover {
@@ -530,5 +530,13 @@
         .container {
             width:700px;
             margin:0 auto;
+        }
+
+    /* button styles */
+
+        .share-button {
+            font-size: 14px;
+            width: 32.4%;
+            margin: .25%;
         }
 
