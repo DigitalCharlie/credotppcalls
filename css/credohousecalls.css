@@ -57,7 +57,8 @@
         -webkit-text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
         -moz-text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
         text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
-        margin-bottom:20px;
+        margin-bottom: 20px;
+        margin-top:10;
 
     }
 
@@ -343,7 +344,7 @@
 /* BLOG POSTS THEMSELVES */
 
     .container {
-        padding-top:50px;
+        padding-top:65px;
     }
 
 
@@ -463,5 +464,11 @@
         .blog-post-image {
             max-width:auto;
         }
+
+    /* BLOG POSTS THEMSELVES */
+
+            .container {
+                padding-top:85px;
+            }
 
 
