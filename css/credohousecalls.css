@@ -401,7 +401,7 @@
     .container {
         padding-top:50px;
         margin:0 10px;
-        min-height:70vh;
+        min-height:80vh;
     }
 
     .post-title {
@@ -540,7 +540,7 @@
 
     /* BLOG POSTS THEMSELVES */
 
-        .post .thank-you-page {
+        .post, .thank-you-page {
             width:750px;
             margin:0 auto;
         }
