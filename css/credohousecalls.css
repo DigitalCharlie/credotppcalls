@@ -68,6 +68,7 @@
         font-size:24px;
         text-align:center;
         margin-bottom:10px;
+        margin-top:10px;
     }
 
     h3 {
@@ -283,8 +284,7 @@
 
     .blog-post-image {
         max-width:100%;
-        width:250px;
-        margin:0 auto;
+        margin:5px auto 0;
     }
 
     .blog-post {
@@ -292,12 +292,17 @@
         width:31.33%;
         margin:1%;
         text-align: center;
+        float:left;
     }
 
     .blog-post-link {
         text-decoration: none;
         color:#000000;
         font-weight:normal;
+    }
+
+    .blog-post-title {
+        margin:0;
     }
 
 
