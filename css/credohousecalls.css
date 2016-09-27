@@ -441,6 +441,17 @@
         height:196.875px;
     }
 
+    .video-share-container {
+        margin: 10px 0 20px;
+        width: 350px;
+    }
+
+    .video-share-button {
+        font-size:14px;
+        width:100%;
+        margin-top:10px;
+    }
+
 
 @media screen and (min-width: 800px) {
 
@@ -581,6 +592,16 @@
         .video-embed {
             width:560px;
             height:315px;
+            margin:0 auto;
+        }
+
+        .video-share-container {
+            width: 560px;
+        }
+
+        .video-share-button {
+            width:45%;
+            margin:2.5%;
         }
 
     /* button styles */
