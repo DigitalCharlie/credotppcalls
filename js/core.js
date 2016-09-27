@@ -113,5 +113,9 @@ function populateRep(rep) {
 	        $('.overlay').css('opacity', 0);
 	        }, 50);
 	    });
+
+	    $("#header-take-action").click(function() {
+	    	$('#zip-search').focus();
+	    });
 	});
 
