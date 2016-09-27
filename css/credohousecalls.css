@@ -328,6 +328,12 @@
         margin:0 0 5px 0;
     }
 
+    .footer-text:hover {
+        background: rgba(255,103,7,100);
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
     .footer-buttons {
         width:110px;
         margin:0 auto;
