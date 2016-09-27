@@ -355,8 +355,9 @@
     }
 
     .script {
-        padding:20px;
+        padding:10px 20px;
         background: rgb(218, 211, 203);
+        font-size:14px;
     }
 
 /* Blog Posts on Home Page */
