@@ -193,7 +193,7 @@ var rep_table= [
 {first_name: "Evan",last_name: "Jenkins",bioguide_id: "J000297",disposition: "oppose",whipcount_id: "7908"},
 {first_name: "Lynn",last_name: "Jenkins",bioguide_id: "J000290",disposition: "supports",whipcount_id: "8012"},
 {first_name: "Bill",last_name: "Johnson",bioguide_id: "J000292",disposition: "supports",whipcount_id: "7715"},
-{first_name: "Eddie",last_name: "Johnson",bioguide_id: "J000126",disposition: "unknown ",whipcount_id: "7668","202-225-8885"},
+{first_name: "Eddie",last_name: "Johnson",bioguide_id: "J000126",disposition: "unknown ",whipcount_id: "7668",phone: "202-225-8885"},
 {first_name: "Henry",last_name: "Johnson",bioguide_id: "J000288",disposition: "oppose",whipcount_id: "7722"},
 {first_name: "Sam",last_name: "Johnson",bioguide_id: "J000174",disposition: "supports",whipcount_id: "8039"},
 {first_name: "David",last_name: "Jolly",bioguide_id: "J000296",disposition: "did not vote",whipcount_id: "7642"},
