@@ -344,7 +344,11 @@
 /* BLOG POSTS THEMSELVES */
 
     .container {
-        padding-top:65px;
+        padding-top:50px;
+    }
+
+    .post-title {
+        margin-top:30px;
     }
 
 
@@ -466,9 +470,4 @@
         }
 
     /* BLOG POSTS THEMSELVES */
-
-            .container {
-                padding-top:85px;
-            }
-
 
