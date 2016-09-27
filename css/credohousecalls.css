@@ -599,14 +599,9 @@
             width: 560px;
         }
 
-        .video-share-button, .fb {
-            width:49%;
-            float:left;
-        }
-
-        .video-share-button, .tw {
-            width:49%;
-            float:right;
+        .video-share-button{
+            width:47%;
+            margin:0px 1.25%;
         }
 
     /* button styles */
