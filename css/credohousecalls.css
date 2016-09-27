@@ -329,7 +329,7 @@
     }
 
     .footer-text:hover {
-        background: rgba(255,103,7,100);
+        color: rgba(255,103,7,100);
         transition-duration: .5s;
         -webkit-transition-duration: .5s;
     }
