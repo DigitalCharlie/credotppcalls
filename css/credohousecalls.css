@@ -540,8 +540,8 @@
 
     /* BLOG POSTS THEMSELVES */
 
-        .container {
-            width:700px;
+        .post .thank-you-page {
+            width:750px;
             margin:0 auto;
         }
 
