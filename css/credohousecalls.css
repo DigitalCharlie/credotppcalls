@@ -166,6 +166,30 @@
         margin:0 auto 5px;
     }
 
+/* Share Buttons */
+
+    .facebook {
+        background: #3b5998;
+    }
+    
+    .twitter {
+        background: #1DA1F2;
+    }
+    
+    .email {
+        background: rgb(50, 177, 34);
+    }
+
+    .share-button {
+        
+    }
+
+    .share-button:hover {
+        background: rgba(255,103,7,100);
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
 /* Form Design */
 
     button {
@@ -358,6 +382,7 @@
         width:110px;
         margin:0 auto;
     }
+
 
 /* BLOG POSTS THEMSELVES */
 
