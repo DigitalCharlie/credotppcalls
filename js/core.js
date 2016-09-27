@@ -123,3 +123,20 @@ function populateRep(rep) {
 	    	$('#zip-search').focus();
 	    });
 	});
+
+
+/* How'd it go button */
+
+	$(function() {
+		$("#how-did-it-go").click(function() {
+	        $('.page-1').css('display', 'none');
+	        setTimeout(function() {
+	        $('.page-1').css('opacity', 0);
+	        }, 50);
+	        $('.page-2').css('display', 'block');
+	        setTimeout(function() {
+	        $('.page-2').css('opacity', 1);
+	        }, 50);
+	    });
+	});
+
