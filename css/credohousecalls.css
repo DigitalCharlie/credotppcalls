@@ -101,6 +101,11 @@
         font-style:italic;
     }
 
+    .almost-done {
+        text-align:center;
+        font-style:italic;
+    }
+
 /* Header CSS */
 
     .header {
