@@ -115,8 +115,8 @@ function populateRep(rep) {
 
 	       	$('.page-1').css('display', 'block');
 	        $('.page-1').css('opacity', 1);
-	        $('.page-2').css('display', 'block');
-	        $('.page-2').css('opacity', 10);
+	        $('.page-2').css('display', 'none');
+	        $('.page-2').css('opacity', 0);
 	    });
 
 	    $("#header-take-action").click(function() {
