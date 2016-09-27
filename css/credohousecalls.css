@@ -5,7 +5,7 @@
 /* Global stuff */
 
     .hidden {
-        display:none;
+        display:none!important;
     }
 
 /* BACKGROUND CSS */
