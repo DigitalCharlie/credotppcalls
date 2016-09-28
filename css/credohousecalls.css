@@ -597,19 +597,24 @@
         }
 
         .video-embed {
-            width:560px;
+            width:530px;
             height:315px;
             margin:0;
         }
 
         .video-share-container {
-            width: 560px;
+            width: 530px;
             margin: 10px 0 20px;
         }
 
         .video-share-button{
             width:47%;
             margin:0px 1.25%;
+        }
+
+        .blog-post-call-to-action {
+            float:right;
+            width:240px;
         }
 
     /* button styles */
