@@ -452,7 +452,6 @@
     .video-share-button {
         font-size:14px;
         width:100%;
-        margin-top:10px;
     }
 
     .post {
@@ -460,9 +459,9 @@
     }
 
     .blog-post-call-to-action {
-        width:350px;
-        height:342px;
+        width:330px;
         padding:10px;
+        margin: 10px auto;
         background: rgb(218, 211, 203);
     }
 
@@ -479,7 +478,6 @@
     .blog-post-cta-submit {
         width:100%;
         font-size:14px;
-        margin-top:15px;
     }
 
     .blog-post-cta {
