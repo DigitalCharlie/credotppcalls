@@ -327,7 +327,8 @@
     }
 
     .modal-page {
-        padding-top:10px;
+        width: 95%;
+        padding:2.5%;
     }
 
     .the-x {
@@ -630,10 +631,6 @@
 
         .multiple-reps-button {
             width:400px;
-        }
-
-        .modal-page {
-            padding-top:20px;
         }
 
 
