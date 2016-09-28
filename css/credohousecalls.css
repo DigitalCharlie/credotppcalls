@@ -393,6 +393,7 @@
     .overlay-headline {
         font-size:24px;
         padding: 5px 20px 0;
+        text-align:center;
     }
 
     .sample-script-button {
@@ -691,7 +692,6 @@
         }
 
         .overlay-headline {
-            width:500px;
             margin:0 auto 10px;
         }
 
