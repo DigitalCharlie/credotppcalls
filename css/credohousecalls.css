@@ -326,6 +326,11 @@
     .overlay-content {
     }
 
+    .modal-page {
+        width:95%;
+        padding:2.5%;
+    }
+
     .the-x {
         cursor:pointer;
         color:grey;
@@ -620,7 +625,8 @@
         }
 
         .overlay-headline {
-            font-size:30px;
+            width:500px;
+            margin:0 auto 10px;
         }
 
         .multiple-reps-button {
