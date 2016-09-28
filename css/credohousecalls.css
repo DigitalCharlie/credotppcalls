@@ -597,14 +597,14 @@
         }
 
         .video-embed {
-            width:520px;
+            width:510px;
             height:315px;
             margin:0;
             display:inline-block;
         }
 
         .video-share-container {
-            width: 520px;
+            width: 510px;
             margin: 10px 0 20px;
         }
 
@@ -616,7 +616,9 @@
         .blog-post-call-to-action {
             float:right;
             width:210px;
+            height:315px;
             padding:10px;
+            margin-left:10px;
             background: rgb(218, 211, 203);
         }
 
