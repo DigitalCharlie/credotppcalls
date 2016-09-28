@@ -226,6 +226,12 @@
         -webkit-transition-duration: .5s;
     }
 
+    .action-button {
+        font-size:18px;
+        margin-bottom:25px;
+        width:100%;
+    }
+
     .submit-button {
         box-shadow: 0 1px 10px rgba(0,0,0,.4);
         width:100%;
@@ -283,12 +289,6 @@
 
     .rep-details {
 
-    }
-
-    .action-button {
-        font-size:18px;
-        margin-bottom:25px;
-        width:100%;
     }
 
     .key-rep-desc {
@@ -563,10 +563,6 @@
             padding-left:0;
         }
 
-        .action-button {
-            width:auto;
-            min-width: 250px;
-        }
 
     /* Form styles */
         .zip-input {
@@ -580,6 +576,11 @@
 
         .home-fields-wrapper {
             margin: 30px auto;
+        }
+
+        .action-button {
+            width:auto;
+            min-width: 250px;
         }
 
     /* Scoreboard Design */
@@ -617,6 +618,12 @@
         .overlay-headline {
             font-size:30px;
         }
+
+        .multiple-reps-button {
+            margin:0 auto 10px;
+            width:400px;
+        }
+
 
     /* Blog Posts on Home Page */
 
