@@ -81,6 +81,7 @@ function populateRep(rep) {
 	});
 
 	$('#rep-name').text(rep.first_name + " " +rep.last_name);
+	$('.rep-last-name').text(rep.last_name);
 	$('#phone-number').text(rep.phone);
 	$('#stance').text(rep.disposition);
 	$('#overlay-content-1-rep').removeClass('hidden');
