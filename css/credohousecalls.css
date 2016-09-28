@@ -383,6 +383,8 @@
         overflow: hidden;
         transition-duration: 1s;
         -webkit-transition-duration: 1s;
+        transition-property: height;
+        -webkit-transition-property: height;
     }
 
     .script-text {
