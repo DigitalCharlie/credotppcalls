@@ -396,8 +396,16 @@
 
 /* LAST PAGE OF FORM ON OVERLAY */
 
-    .responses{
-        
+    .response-page {
+        text-align:left;
+    }
+
+    .responses {
+
+    }
+
+    .for-radio {
+        display:block;
     }
 
 /* Blog Posts on Home Page */
