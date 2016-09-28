@@ -326,6 +326,10 @@
     .overlay-content {
     }
 
+    .modal-page {
+        padding-top:10px;
+    }
+
     .the-x {
         cursor:pointer;
         color:grey;
@@ -355,7 +359,7 @@
 
     .overlay-headline {
         font-size:24px;
-        padding: 10px 20px 0;
+        padding: 5px 20px 0;
     }
 
     .script {
@@ -626,6 +630,10 @@
 
         .multiple-reps-button {
             width:400px;
+        }
+
+        .modal-page {
+            padding-top:20px;
         }
 
 
