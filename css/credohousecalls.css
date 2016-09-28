@@ -375,9 +375,9 @@
         padding:0;
         background: rgb(218, 211, 203);
         font-size:14px;
-        margin-bottom:20px;
+        margin-bottom:10px;
         border-radius:10px;
-        max-height:0;
+        height:0;
         transition: 1s;
         z-index:5;
         overflow: hidden;

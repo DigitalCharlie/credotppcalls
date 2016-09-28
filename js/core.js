@@ -119,7 +119,7 @@ function populateRep(rep) {
 	        $('.page-1').css('opacity', 1);
 	        $('.page-2').css('display', 'none');
 	        $('.page-2').css('opacity', 0);
-	        $("#script").css('max-height',0);
+	        $("#script").css('height',0);
 			$("#sample-script-button").removeClass('hidden');
 	    });
 
@@ -148,11 +148,11 @@ function populateRep(rep) {
 
 	$(function() {
 		$("#sample-script-button").click(function() {
-			$("#script").css('max-height','300px');
+			$("#script").animate({height: '160px'});
 			$("#sample-script-button").addClass('hidden');
 		})
 		$("#collapse-script").click(function() {
-			$("#script").css('max-height',0);
+			$("#script").css('height',0);
 			$("#sample-script-button").removeClass('hidden');
 		})
 	})
