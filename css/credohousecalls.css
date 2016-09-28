@@ -616,10 +616,11 @@
         .blog-post-call-to-action {
             float:right;
             width:210px;
-            height:315px;
+            height:342px;
             padding:10px;
             margin-left:10px;
             background: rgb(218, 211, 203);
+            border-radius: 5px;
         }
 
         .blog-cta-h3 {
