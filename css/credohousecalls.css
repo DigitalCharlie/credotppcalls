@@ -451,13 +451,14 @@
 
     .video-share-container {
         margin: 10px auto 20px;
-        width: 350px;
+        width: 330px;
         display: block;
     }
 
     .video-share-button {
         font-size:14px;
         width:100%;
+        margin-top:10px;
     }
 
     .post {
