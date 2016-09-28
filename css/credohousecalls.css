@@ -339,6 +339,10 @@
         cursor:pointer;
     }
 
+    .multiple-reps-button {
+        margin:0 auto 10px;
+    }
+
     .page-1 {
         transition: .7s;
     }
@@ -620,7 +624,6 @@
         }
 
         .multiple-reps-button {
-            margin:0 auto 10px;
             width:400px;
         }
 
