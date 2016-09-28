@@ -430,6 +430,11 @@
 
     .post-title {
         margin-top:30px;
+        width:350px;
+    }
+
+    .post-text {
+        width:350px;
     }
 
     .thank-you-page {
@@ -669,6 +674,10 @@
         .blog-post-cta {
             font-size:18px;
             height:37px;
+        }
+
+        .post-title, .post-text {
+            width:auto;
         }
 
     /* button styles */
