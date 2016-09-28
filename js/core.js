@@ -141,3 +141,13 @@ function populateRep(rep) {
 	    });
 	});
 
+/* Script Expand button */
+
+	$(function() {
+		$("#sample-script-button").click(function() {
+			$("#script").css('height','auto');
+		})
+		$("#collapse-script").click(function() {
+			$("#script").css('height',0);
+		})
+	})
