@@ -382,10 +382,8 @@
         opacity:0;
         z-index:5;
         overflow: hidden;
-        transition-duration: 1s;
-        -webkit-transition-duration: 1s;
-        transition-property: height;
-        -webkit-transition-property: height;
+        transition-duration: .7s;
+        -webkit-transition-duration: .7s;
     }
 
     .script-text {
