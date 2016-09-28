@@ -119,8 +119,10 @@ function populateRep(rep) {
 	        $('.page-1').css('opacity', 1);
 	        $('.page-2').css('display', 'none');
 	        $('.page-2').css('opacity', 0);
-	        $("#script").css('height',0);
-			$("#sample-script-button").removeClass('hidden');
+	       	$('#sample-script-button').css('display', 'block');
+	        $('#sample-script-button').css('opacity', 1);
+	        $('#script').css('display', 'none');
+	        $('#script').css('opacity', 0);
 	    });
 
 	    $("#header-take-action").click(function() {
@@ -148,11 +150,23 @@ function populateRep(rep) {
 
 	$(function() {
 		$("#sample-script-button").click(function() {
-			$("#script").animate({height: '160px'});
-			$("#sample-script-button").addClass('hidden');
+	        $('#sample-script-button').css('display', 'none');
+	        setTimeout(function() {
+	        $('#sample-script-button').css('opacity', 0);
+	        }, 50);
+	        $('#script').css('display', 'block');
+	        setTimeout(function() {
+	        $('.script').css('opacity', 1);
+	        }, 50);;
 		})
 		$("#collapse-script").click(function() {
-			$("#script").css('height',0);
-			$("#sample-script-button").removeClass('hidden');
+			$('#script').css('display', 'none');
+	        setTimeout(function() {
+	        $('#script').css('opacity', 0);
+	        }, 50);
+	        $('#sample-script-button').css('display', 'block');
+	        setTimeout(function() {
+	        $('#sample-script-button').css('opacity', 1);
+	        }, 50);
 		})
 	})
