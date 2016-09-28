@@ -81,7 +81,7 @@ function populateRep(rep) {
 	});
 
 	if (rep.gender === "F") {
-		console.log(ready);
+		console.log("Test!");
 	};
 
 	$('#rep-name').text(rep.first_name + " " +rep.last_name);
