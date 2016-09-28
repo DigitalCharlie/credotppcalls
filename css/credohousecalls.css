@@ -597,14 +597,14 @@
         }
 
         .video-embed {
-            width:530px;
+            width:520px;
             height:315px;
             margin:0;
             display:inline-block;
         }
 
         .video-share-container {
-            width: 530px;
+            width: 520px;
             margin: 10px 0 20px;
         }
 
@@ -615,7 +615,29 @@
 
         .blog-post-call-to-action {
             float:right;
-            width:240px;
+            width:210px;
+            padding:5px;
+            background: rgb(218, 211, 203);
+        }
+
+        .blog-cta-h3 {
+            margin-top:0;
+            padding-top:0;
+            text-align:center;
+        }
+
+        .cta-sidebar-text {
+            font-size:14px;
+        }
+
+        .blog-post-cta-submit {
+            width:100%;
+            font-size:18px;
+            margin-top:10px;
+        }
+
+        .blog-post-cta {
+            font-size:18px;
         }
 
     /* button styles */
