@@ -148,7 +148,7 @@ function populateRep(rep) {
 	$(function() {
 		$("#sample-script-button").click(function() {
 			$("#script").css('max-height','300px');
-			$("sample-script-button").addClass('hidden');
+			$("#sample-script-button").addClass('hidden');
 		})
 		$("#collapse-script").click(function() {
 			$("#script").css('max-height',0);
