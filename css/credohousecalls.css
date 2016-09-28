@@ -429,12 +429,13 @@
     }
 
     .post-title {
-        margin-top:30px;
+        margin:30px auto 0;
         width:350px;
     }
 
     .post-text {
         width:350px;
+        margin: 0 auto;
     }
 
     .thank-you-page {
