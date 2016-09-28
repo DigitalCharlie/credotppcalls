@@ -65,7 +65,7 @@
         margin-top:10px;
     }
 
-    .v1-h1 {
+    .stop-the-tpp-h1 {
         font-size: 48px;
     }
 
@@ -96,7 +96,7 @@
         margin: 0 auto 30px;
     }
 
-    .v1-zip-ask {
+    .stop-the-tpp-zip-ask {
         text-align:center;
         font-style:italic;
     }
@@ -512,8 +512,13 @@
             font-size:70px;
         }
 
-        .v1-h1 {
+        .stop-the-tpp-h1 {
             font-size: 80px;
+            margin:40px 0;
+        }
+
+        .stop-the-tpp-h2 {
+            margin:40px 0;
         }
 
         h2 {
@@ -534,9 +539,11 @@
             border:none;
         }
 
-        .v1-zip-ask {
+        .stop-the-tpp-zip-ask {
             margin: 20px auto -20px;
         }
+
+
 
     /* Swing Reps */
 
