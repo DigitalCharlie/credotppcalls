@@ -79,6 +79,11 @@ function populateRep(rep) {
 			$.extend(rep,value);
 		}
 	});
+
+	if (rep.gender === "F") {
+		console.log(ready);
+	};
+
 	$('#rep-name').text(rep.first_name + " " +rep.last_name);
 	$('#phone-number').text(rep.phone);
 	$('#stance').text(rep.disposition);
