@@ -370,8 +370,8 @@
         margin-bottom:20px;
     }
 
-    .script-text {
-        font-size:14px;
+    .overlay-p-text {
+        font-size:12px;
     }
 
 /* Blog Posts on Home Page */
@@ -631,6 +631,10 @@
 
         .multiple-reps-button {
             width:400px;
+        }
+
+        .overlay-p-text {
+            font-size:14px;
         }
 
 
