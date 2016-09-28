@@ -785,10 +785,12 @@
 
     /* PAGE 2 STUFF */
 
-        .form-field {
-            border:none;
-            padding:0;
-            padding-left:1%;
-            margin-bottom:10px;
+        .response-page {
+            width:400px;
+            margin:0 auto;
+        }
+
+        .final-submit-button {
+            width:100%;
         }
 
