@@ -365,6 +365,8 @@
 
     .sample-script-button {
         background: rgb(218, 211, 203);
+        display:block;
+        margin:0 auto;
     }
 
     .script {
@@ -380,7 +382,7 @@
     }
 
     .script-text {
-        padding:10px;
+        padding:5px 10px;
     }
 
     .overlay-p-text {
