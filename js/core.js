@@ -80,10 +80,6 @@ function populateRep(rep) {
 		}
 	});
 
-	if (rep.gender === "F") {
-		console.log("Test!");
-	};
-
 	$('#rep-name').text(rep.first_name + " " +rep.last_name);
 	$('#phone-number').text(rep.phone);
 	$('#stance').text(rep.disposition);
