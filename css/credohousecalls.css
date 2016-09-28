@@ -616,7 +616,7 @@
         .blog-post-call-to-action {
             float:right;
             width:210px;
-            padding:5px;
+            padding:10px;
             background: rgb(218, 211, 203);
         }
 
@@ -638,6 +638,7 @@
 
         .blog-post-cta {
             font-size:18px;
+            height:37px;
         }
 
     /* button styles */
