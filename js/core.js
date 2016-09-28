@@ -48,9 +48,9 @@
 							populateRep(rep);
 							console.log(rep);
 						} else {
-							$('.multiple-reps-li:not(.hidden)').remove();
+							$('.multiple-reps-button:not(.hidden)').remove();
 							$.each(repList, function(index, rep) {
-								var repElement=$('.multiple-reps-li.hidden').clone();
+								var repElement=$('.multiple-reps-button.hidden').clone();
 								repElement.find('.multiple-reps-name').text(rep.first_name + " " +rep.last_name);
 								repElement.removeClass('hidden');
 								repElement.on('click', function(event){
