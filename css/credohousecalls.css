@@ -600,6 +600,7 @@
             width:530px;
             height:315px;
             margin:0;
+            display:inline-block;
         }
 
         .video-share-container {
