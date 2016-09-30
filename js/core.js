@@ -181,7 +181,8 @@ function populateRep(rep) {
 		$('#final-submit-button').click(function() {
 			if ($('#rep-radio-button-error').hasClass("error")) {
 				$('#rep-responses').addClass('input-error');
-			} else
-			$('#rep-responses').removeClass('input-error');
+			} else {
+				$('#rep-responses').removeClass('input-error');
+			}
 		});
 	});
