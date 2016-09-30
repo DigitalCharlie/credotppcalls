@@ -184,6 +184,7 @@ function populateRep(rep) {
 					$('#rep-responses').addClass('input-error');
 				} else {
 					$('#rep-responses').removeClass('input-error');
+				}
 			}, 1);
 		});
 	});
