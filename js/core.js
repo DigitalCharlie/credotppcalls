@@ -126,6 +126,7 @@ function populateRep(rep) {
 	        $('#script').css('opacity', 0);
 	        var validator = $( "#ak-form" ).validate();
 			validator.resetForm();
+			$('.form-field)').removeClass('error');
 	    });
 
 	    $("#header-take-action").click(function() {
@@ -175,3 +176,12 @@ function populateRep(rep) {
 	})
 
 /* FORM VALIDATION STUFF */
+
+	$(function() }{
+		$('#final-submit-button').click(function() {
+			if ('#rep-radio-button-error').hasClass("error") === true {
+				('#rep-reponses').addClass('input-error');
+			} else
+			('#rep-responses').removeClass('input-error');
+		});
+	}
