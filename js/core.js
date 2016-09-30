@@ -179,10 +179,11 @@ function populateRep(rep) {
 
 	$(function() {
 		$('#final-submit-button').click(function() {
-			if ($('#rep-radio-button-error').css('display') === 'block') {
-				$('#rep-responses').addClass('input-error');
-			} else {
-				$('#rep-responses').removeClass('input-error');
-			}
+			setTimout(function() {
+				if ($('#rep-radio-button-error').css('display') === 'block') {
+					$('#rep-responses').addClass('input-error');
+				} else {
+					$('#rep-responses').removeClass('input-error');
+			}, 1);
 		});
 	});
