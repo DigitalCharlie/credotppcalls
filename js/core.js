@@ -128,7 +128,7 @@ function populateRep(rep) {
 			validator.resetForm();
 			$('.form-field').removeClass('error');
 			$('.radio-button').prop('checked', false);
-
+			$('#rep-responses').removeClass('input-error');
 	    });
 
 	    $("#header-take-action").click(function() {
