@@ -272,6 +272,7 @@
 
     label.error {
         display:block;
+        margin-top:3px;
     }
 
     .input-error {
@@ -281,8 +282,8 @@
     .form-field {
         border:none;
         padding:0;
-        margin-top:10px;
-        height: 37px;
+        margin-top:5px;
+        height: 30px;
         border: none;
         vertical-align: bottom;
         border-radius: 5px;
@@ -292,6 +293,11 @@
         padding:0 0 0 2%;
         box-sizing: border-box;
         background: rgb(218, 211, 203);
+    }
+
+    fieldset {
+        border:none;
+        padding:0;
     }
 
     .text-area {
