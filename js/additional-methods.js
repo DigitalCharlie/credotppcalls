@@ -1045,9 +1045,13 @@ $.validator.addMethod( "vinUS", function( v ) {
 	return false;
 }, "The specified vehicle identification number (VIN) is invalid." );
 
-$.validator.addMethod( "zip", function( value, element ) {
+$.validator.addMethod( "fullName", function( value, element ) {
+	return this.optional( element ) || /\w+\s+\w+/.test( value );
+}, "Please enter a first and last name." );
+
+$.validator.addMethod( "zipcodeUS", function( value, element ) {
 	return this.optional( element ) || /^\d{5}(-\d{4})?$/.test( value );
-}, "The specified US ZIP Code is invalid" );
+}, "Please enter a valid zip code." );
 
 $.validator.addMethod( "ziprange", function( value, element ) {
 	return this.optional( element ) || /^90[2-5]\d\{2\}-\d{4}$/.test( value );
