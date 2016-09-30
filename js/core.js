@@ -126,7 +126,7 @@ function populateRep(rep) {
 	        $('#script').css('opacity', 0);
 	        var validator = $( "#ak-form" ).validate();
 			validator.resetForm();
-			$('.form-field)').removeClass('error');
+			$('.form-field').removeClass('error');
 	    });
 
 	    $("#header-take-action").click(function() {
