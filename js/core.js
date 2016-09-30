@@ -88,6 +88,7 @@ function populateRep(rep) {
 	$('#overlay-content-multiple-reps').addClass('hidden');
 	$('#ak-form input[type="radio"]').prop('name', 'response-' + rep.whipcount_id);
 	$('#rep-radio-button-error').prop('for', 'response-' + rep.whipcount_id);
+	var repResponse = 'response-' + rep.whipcount_id;
 }
 
 
@@ -179,5 +180,5 @@ function populateRep(rep) {
 $("#ak-form")
     .validate({
         messages: {
-            response-rep.whipcount_id: "Please select a response"
+            var repResponse: "Please select a response"
     };
