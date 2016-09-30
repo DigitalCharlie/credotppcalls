@@ -399,14 +399,14 @@
     }
 
     .sample-script-button {
-        background: rgb(218, 211, 203);
+        background: rgb(188, 181, 173);
         display:block;
         margin:0 auto 10px;
     }
 
     .script {
         padding:0;
-        background: rgb(218, 211, 203);
+        background: rgb(188, 181, 173);
         font-size:14px;
         margin-bottom:10px;
         border-radius:10px;
