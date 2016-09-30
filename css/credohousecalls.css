@@ -237,6 +237,10 @@
         width:100%;
     }
 
+    .final-submit-button {
+        margin-top:5px;
+    }
+
     .home-fields-wrapper {
         width:525px;
         margin: 15px auto;
@@ -263,7 +267,7 @@
         box-sizing: border-box;
     }
 
-    .error-message, .error{
+    .error-message,{
         font-size: 14px;
         text-align: center;
         font-style: italic;
@@ -273,6 +277,14 @@
     label.error {
         display:block;
         margin-top:3px;
+        font-size:12px;
+        text-align:center;
+        font-style:italic;
+    }
+
+    input.error {
+        box-sizing: border-box;
+        border:2px solid red;
     }
 
     .input-error {
