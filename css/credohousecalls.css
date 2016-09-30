@@ -713,7 +713,8 @@
             width: 600px;
             height: 500px;
             max-height:90vh;
-            margin:0 auto;
+            margin:-250px auto;
+            top:50%;
         }
 
         .overlay-headline {
