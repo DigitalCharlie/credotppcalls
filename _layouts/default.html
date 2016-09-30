@@ -52,16 +52,18 @@
                     <form role="form" method="POST" action="//act.credoaction.com/act/" id="ak-form" name="ak-form">
 
                       <div class="responses">
-                          <label class="for-radio"><span><input type="radio" name="response-" value="supportive"></span>They oppose the TPP</label>
+                        <fieldset>
+                          <label class="for-radio"><span><input type="radio" name="response-" value="supportive" required></span>They oppose the TPP</label>
                           <label class="for-radio"><span><input type="radio" name="response-" value="opposed"></span>They support the TPP</label>
                           <label class="for-radio"><span><input type="radio" name="response-" value="uncommitted"></span>They haven't taken a position</label>
                           <label class="for-radio"><span><input type="radio" name="response-" value="left a message"></span>I left a message</label>
                           <label class="for-radio"><span><input type="radio" name="response-" value="unreachable"></span>No one answered</label>
+                        </fieldset>
                       </div>
                       <textarea id="id_action_survey" name="action_survey" class="ak-has-overlay form-field text-area" placeholder="Is there anything you'd like to add about the call?"></textarea>
 
                       <div class="form-group"><input type="text" class="form-control form-field" name="name" placeholder="Your name"></div>
-                      <div class="form-group"><input type="email" class="form-control form-field" name="email" placeholder="Your email"></div>
+                      <div class="form-group"><input type="email" class="form-control form-field" name="email" placeholder="Your email" required></div>
                       <div class="form-group"><input type="text" class="form-control form-field" name="zip" placeholder="Your zip code"></div>
 
                       <button type="submit" class="btn btn-ak action-button final-submit-button">Submit</button>
@@ -73,6 +75,9 @@
                         <input name="lists" value="1" type="hidden" />
                                           
                     </form>
+                    <script>
+                      $("#ak-form").validate();
+                    </script>
                   </div>
                 </div>
               </div>
