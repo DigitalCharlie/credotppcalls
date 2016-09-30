@@ -127,7 +127,7 @@ function populateRep(rep) {
 	        var validator = $( "#ak-form" ).validate();
 			validator.resetForm();
 			$('.form-field').removeClass('error');
-			$('.for-radio').prop('checked', false);
+			$('.radio-button').prop('checked', false);
 
 	    });
 
