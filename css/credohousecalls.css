@@ -263,11 +263,15 @@
         box-sizing: border-box;
     }
 
-    .error-message {
+    .error-message, .error{
         font-size: 14px;
         text-align: center;
         font-style: italic;
         color: red;
+    }
+
+    .error {
+        display:block;
     }
 
     .input-error {
@@ -277,7 +281,7 @@
     .form-field {
         border:none;
         padding:0;
-        margin-bottom:10px;
+        margin-top:10px;
         height: 37px;
         border: none;
         vertical-align: bottom;
@@ -286,7 +290,6 @@
         width: 100%;
         color:black;
         padding:0 0 0 2%;
-        margin-bottom:10px;
         box-sizing: border-box;
         background: rgb(218, 211, 203);
     }
