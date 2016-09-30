@@ -123,6 +123,8 @@ function populateRep(rep) {
 	        $('#sample-script-button').css('opacity', 1);
 	        $('#script').css('display', 'none');
 	        $('#script').css('opacity', 0);
+	        var validator = $( "#ak-form" ).validate();
+			validator.resetForm();
 	    });
 
 	    $("#header-take-action").click(function() {
