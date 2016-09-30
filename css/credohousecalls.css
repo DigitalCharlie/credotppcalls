@@ -270,7 +270,7 @@
         color: red;
     }
 
-    .error {
+    label .error {
         display:block;
     }
 
