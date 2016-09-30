@@ -505,13 +505,13 @@
     }
 
     .post-title {
-        margin:30px auto 0;
+        margin:30px auto 10px;
         width:350px;
     }
 
     .post-text {
         width:350px;
-        margin: 10px auto;
+        margin: 0 auto;
     }
 
     .thank-you-page {
@@ -522,7 +522,7 @@
         width:350px;
         height:196.875px;
         display:block;
-        margin:0 auto;
+        margin:10px auto 0;
     }
 
     .video-share-container {
@@ -728,7 +728,7 @@
         .video-embed {
             width:510px;
             height:315px;
-            margin:0;
+            margin:10px 0 0 0;
             display:inline-block;
         }
 
