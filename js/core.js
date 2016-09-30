@@ -179,7 +179,7 @@ function populateRep(rep) {
 
 	$(function() {
 		$('#final-submit-button').click(function() {
-			setTimout(function() {
+			setTimeout(function() {
 				if ($('#rep-radio-button-error').css('display') === 'block') {
 					$('#rep-responses').addClass('input-error');
 				} else {
