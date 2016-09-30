@@ -177,11 +177,11 @@ function populateRep(rep) {
 
 /* FORM VALIDATION STUFF */
 
-	$(function() }{
+	$(function() {
 		$('#final-submit-button').click(function() {
-			if ('#rep-radio-button-error').hasClass("error") === true {
+			if (('#rep-radio-button-error').hasClass("error")) {
 				('#rep-reponses').addClass('input-error');
 			} else
 			('#rep-responses').removeClass('input-error');
 		});
-	}
+	});
