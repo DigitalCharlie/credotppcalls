@@ -87,6 +87,7 @@ function populateRep(rep) {
 	$('#overlay-content-1-rep').removeClass('hidden');
 	$('#overlay-content-multiple-reps').addClass('hidden');
 	$('#ak-form input[type="radio"]').prop('name', 'response-' + rep.whipcount_id);
+	$('#rep-radio-button-error').prop('name', 'response-' + rep.whipcount_id);
 }
 
 
@@ -125,7 +126,6 @@ function populateRep(rep) {
 	        $('#script').css('opacity', 0);
 	        var validator = $( "#ak-form" ).validate();
 			validator.resetForm();
-			validator.resetElements();
 	    });
 
 	    $("#header-take-action").click(function() {
