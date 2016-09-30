@@ -87,7 +87,7 @@ function populateRep(rep) {
 	$('#overlay-content-1-rep').removeClass('hidden');
 	$('#overlay-content-multiple-reps').addClass('hidden');
 	$('#ak-form input[type="radio"]').prop('name', 'response-' + rep.whipcount_id);
-	$('#rep-radio-button-error').prop('name', 'response-' + rep.whipcount_id);
+	$('#rep-radio-button-error').prop('for', 'response-' + rep.whipcount_id);
 }
 
 
