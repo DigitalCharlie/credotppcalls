@@ -173,3 +173,11 @@ function populateRep(rep) {
 	        }, 50);
 		})
 	})
+
+/* FORM VALIDATION STUFF */
+
+$("#ak-form")
+    .validate({
+        messages: {
+            response-rep.whipcount_id: "Please select a response"
+    };
