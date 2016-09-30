@@ -180,7 +180,7 @@ function populateRep(rep) {
 	$(function() {
 		$('#final-submit-button').click(function() {
 			if ($('#rep-radio-button-error').hasClass("error")) {
-				$('#rep-reponses').addClass('input-error');
+				$('#rep-responses').addClass('input-error');
 			} else
 			$('#rep-responses').removeClass('input-error');
 		});
