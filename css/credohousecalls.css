@@ -648,21 +648,22 @@
 
     /* Swing Reps */
 
-        .keyrep {
-            width:650px;
-            margin:10px auto;
-        }
+        /*OLD STYLE WITH MORE INFO — not relevant now? 
+            .keyrep {
+                width:650px;
+                margin:10px auto;
+            }
+            .rep-image {
+                float:left;
+                display:inline-block;
+                height:200px;
+                margin-right:20px;
+            }
 
-        .rep-image {
-            float:left;
-            display:inline-block;
-            height:200px;
-            margin-right:20px;
-        }
-
-        .key-rep-desc {
-            padding-left:0;
-        }
+            .key-rep-desc {
+                padding-left:0;
+            }
+        */
 
 
     /* Form styles */
