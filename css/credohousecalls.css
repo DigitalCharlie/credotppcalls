@@ -208,6 +208,7 @@
         font-weight:bold !important;
         height:auto !important;
         padding:10px 0 !important;
+        width:100% !important;
     }
 
     .sp_tw_large, .sp_fb_large, .sp_em_large {
