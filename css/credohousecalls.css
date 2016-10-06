@@ -209,6 +209,8 @@
         height:auto !important;
         padding:10px 0 !important;
         width:100% !important;
+        font-size:24px !important;
+        font-family: montserrat !important;
     }
 
     .sp_tw_large, .sp_fb_large, .sp_em_large {
@@ -234,7 +236,7 @@
         border-style: none;
     }
 
-    button:hover {
+    button:hover, .sp_fb_large a:hover, .sp_tw_large a:hover, .sp_em_large a:hover  {
         background: #cc4f00;
         transition-duration: .5s;
         -webkit-transition-duration: .5s;
@@ -839,6 +841,11 @@
             margin: .25%;
             display: inline-block;
         }
+
+        .sp_fb_large a, .sp_tw_large a, .sp_em_large a {
+            font-size:18px !important;
+        }
+
 
     /* PAGE 2 STUFF */
 
