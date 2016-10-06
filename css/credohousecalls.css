@@ -648,11 +648,19 @@
 
     /* Swing Reps */
 
+        .keyrep {
+            width:650px;
+            margin:50px auto;
+        }
+
+        .call-key-rep {
+            width:300px;
+            display:block;
+            margin:0 auto;
+        }
+
         /*OLD STYLE WITH MORE INFO — not relevant now? 
-            .keyrep {
-                width:650px;
-                margin:10px auto;
-            }
+
             .rep-image {
                 float:left;
                 display:inline-block;
