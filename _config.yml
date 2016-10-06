@@ -3,7 +3,7 @@ title:               Credo TPP Whipcount
 tagline:             'tagline?'
 description:         'description?'
 url:                 http://www.tppwhipcount.com
-baseurl:             /
+baseurl:             
 
 # About/contact
 author:
