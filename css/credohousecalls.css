@@ -542,7 +542,6 @@
     }
 
     .sp_fb_small, .sp_tw_small, .sp_em_small {
-        width:33px;
         padding:3px 5px 0 5px;
         display:inline-block;
     }
