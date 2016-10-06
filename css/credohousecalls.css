@@ -236,8 +236,14 @@
         border-style: none;
     }
 
-    button:hover, .sp_fb_large a:hover, .sp_tw_large a:hover, .sp_em_large a:hover  {
+    button:hover{
         background: #cc4f00;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
+    .sp_fb_large a:hover, .sp_tw_large a:hover, .sp_em_large a:hover {
+        background: rgba(255,103,7,100);
         transition-duration: .5s;
         -webkit-transition-duration: .5s;
     }
