@@ -8,6 +8,7 @@ To make a new blog post, do the following:
 
 3. Put the following in the file, in this format:
 
+```
     ---
     layout: post
     title:  
@@ -17,6 +18,7 @@ To make a new blog post, do the following:
 
     video-url: 
     ---
+```
 
 A few notes:
 - The --- are important.
