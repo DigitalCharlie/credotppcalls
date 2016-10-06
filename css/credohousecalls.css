@@ -236,7 +236,7 @@
         border-style: none;
     }
 
-    button:hover{
+    button:hover {
         background: #cc4f00;
         transition-duration: .5s;
         -webkit-transition-duration: .5s;
