@@ -203,6 +203,18 @@
         max-width:100%;
     }
 
+    .sp_fb_large a, .sp_tw_large a, .sp_em_large a {
+        border-radius:5px !important;
+        font-weight:bold !important;
+        height:auto !important;
+        padding:10px 0 !important;
+    }
+
+    .sp_tw_large, .sp_fb_large, .sp_em_large {
+        width:100%;
+        margin-bottom:5px;
+    }
+
 /* Form Design */
 
     button {
@@ -819,6 +831,12 @@
             font-size: 14px;
             width: 32.4%;
             margin: .25%;
+        }
+
+        .sp_tw_large, .sp_fb_large, .sp_em_large {
+            width: 32.4%;
+            margin: .25%;
+            display: inline-block;
         }
 
     /* PAGE 2 STUFF */
